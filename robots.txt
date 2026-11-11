@@ -1,0 +1,6 @@
+# robots.txt for Friendship Goals Society Caraga-Butuan Inc. (FGSCBI)
+User-agent: *
+Allow: /
+
+Sitemap: https://fgscbi.org/sitemap.xml
+
