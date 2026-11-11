@@ -432,7 +432,7 @@
         galleryItems.forEach(function (item) {
           const itemCat = item.getAttribute('data-category');
           if (category === 'all' || itemCat === category) {
-            item.style.display = 'block';
+            item.style.display = '';
           } else {
             item.style.display = 'none';
           }
