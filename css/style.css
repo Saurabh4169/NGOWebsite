@@ -1039,10 +1039,10 @@ li {
 .hero-display-title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: clamp(48px, 7.5vw, 98px);
+  font-size: clamp(31px, 4.9vw, 64px);
   line-height: 1.04;
   letter-spacing: -0.015em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.95rem;
   display: flex;
   flex-direction: column;
 }
@@ -1064,12 +1064,12 @@ li {
 /* Subtext */
 .hero-lead-text {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(18px, 1.2vw + 12px, 20px);
+  font-size: clamp(13px, 0.78vw + 8px, 14.5px);
   font-weight: 500;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.92);
-  max-width: 560px;
-  margin-bottom: 1.5rem;
+  max-width: 480px;
+  margin-bottom: 1.15rem;
 }
 
 /* Action Buttons */
@@ -1077,7 +1077,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 /* Button 1: Glossy Green-Blue Gradient Pill with shine sweep and glow */
@@ -1090,9 +1090,9 @@ li {
   background: linear-gradient(135deg, #10B981 0%, #0EA5E9 100%);
   color: #FFFFFF !important;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  padding: 0.85rem 2.1rem;
+  padding: 0.58rem 1.45rem;
   border-radius: 9999px;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -1135,9 +1135,9 @@ li {
   background: #FFFFFF;
   color: #0B1B2B !important;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  padding: 0.85rem 2.1rem;
+  padding: 0.58rem 1.45rem;
   border-radius: 9999px;
   text-decoration: none;
   border: 1px solid #FFFFFF;
@@ -1350,15 +1350,15 @@ li {
   }
 
   .hero-display-title {
-    font-size: clamp(32px, 8vw, 44px);
+    font-size: clamp(22px, 5.2vw, 29px);
     line-height: 1.08;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-lead-text {
-    font-size: clamp(15px, 3.8vw, 17px);
+    font-size: clamp(12px, 2.5vw, 13.5px);
     line-height: 1.5;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
     max-width: 100%;
   }
 
@@ -1372,11 +1372,11 @@ li {
 
   .btn-hero-primary-gradient,
   .btn-hero-solid-white {
-    padding: 0.75rem 1.6rem;
-    font-size: 0.95rem;
+    padding: 0.55rem 1.15rem;
+    font-size: 0.72rem;
     text-align: center;
     justify-content: center;
-    flex: 1 1 200px;
+    flex: 1 1 150px;
   }
 
   .hero-feature-bar {
@@ -1420,7 +1420,7 @@ li {
   }
 
   .hero-display-title {
-    font-size: clamp(28px, 9vw, 36px);
+    font-size: clamp(19px, 5.8vw, 24px);
     line-height: 1.1;
   }
 
@@ -1433,8 +1433,8 @@ li {
   .btn-hero-solid-white {
     width: 100%;
     flex: none;
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
+    padding: 0.52rem 1rem;
+    font-size: 0.7rem;
   }
 
   .hero-feature-bar {
