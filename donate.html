@@ -138,394 +138,432 @@
   <main id="main-content">
 
     <!-- Hero Header Banner -->
-    <section class="donate-hero" aria-labelledby="donate-page-title">
+    <section class="about-hero" aria-labelledby="donate-page-title" style="padding: 3rem 1rem 2rem;">
       <div class="container text-center">
-        <div class="donate-hero-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-          <span>SEC-Registered Non-Profit • 100% Direct Community Impact</span>
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 9999px; padding: 0.35rem 1rem; margin-bottom: 1rem;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background: #10B981; display: inline-block;"></span>
+          <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #047857;">CARAGA COMMUNITY &amp; MARITIME WELFARE</span>
         </div>
-        <h1 id="donate-page-title" class="donate-hero-title">
-          Empower Grassroots Communities in Caraga
+        <h1 id="donate-page-title" style="font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 700; color: #0B1B2B; line-height: 1.15; margin-bottom: 0.75rem;">
+          Empower Coastal Communities &amp; Youth in Caraga
         </h1>
-        <p class="donate-hero-lead">
-          Your tax-deductible contribution directly funds livelihood kits for fisherfolk, anti-drug resistance training for youth, and clean shoreline initiatives across Butuan Bay.
+        <p class="section-lead" style="max-width: 760px; margin: 0 auto; color: #4B5563;">
+          Your contribution directly accelerates community-led mangrove restoration, artisanal fisherfolk patrol gear subsidies, youth leadership academies, and village livelihood programs.
         </p>
+
+        <!-- Trust Badges Strip -->
+        <div class="donate-trust-strip fade-in-up">
+          <span class="donate-trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>100% Tax-deductible Receipt</span>
+          </span>
+          <span class="donate-trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>SEC Reg. No. CN2021-08942</span>
+          </span>
+          <span class="donate-trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>Accredited RDC Caraga PSR</span>
+          </span>
+          <span class="donate-trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            <span>Audited Reports Online</span>
+          </span>
+        </div>
       </div>
     </section>
 
     <!-- Main Donation Section (2-Column Grid) -->
-    <section class="donate-main-section">
+    <section class="section" style="padding-top: 1rem; padding-bottom: 4rem;">
       <div class="container">
         <div class="donate-layout-grid">
 
           <!-- Left Column: Interactive Donation & Payment Form -->
-          <div class="donate-form-card" id="donation-card">
-            <div class="donate-card-header">
-              <h2 class="donate-card-title">
-                <span class="donate-step-num" aria-hidden="true">1</span>
-                <span>Select Your Contribution</span>
-              </h2>
+          <div class="donate-form-card" id="donation-card" style="box-shadow: 0 8px 30px rgba(11, 27, 43, 0.06); border: 1px solid #E2E8F0; border-radius: 16px;">
+            
+            <!-- Frequency & Currency Switcher Row -->
+            <div class="donate-switch-row">
+              <div class="freq-switch-pills" role="radiogroup" aria-label="Donation frequency">
+                <button type="button" class="freq-pill-btn" data-freq="once" role="radio" aria-checked="false">
+                  <span>Give Once (One-off)</span>
+                </button>
+                <button type="button" class="freq-pill-btn active-monthly" data-freq="monthly" role="radio" aria-checked="true">
+                  <span>Monthly Sustainer</span>
+                  <span class="badge-popular">POPULAR</span>
+                </button>
+              </div>
+
+              <div class="currency-switch-wrap">
+                <span>CURRENCY:</span>
+                <button type="button" class="currency-toggle-btn active" data-curr="PHP">PHP (₱)</button>
+                <button type="button" class="currency-toggle-btn" data-curr="USD">USD ($)</button>
+              </div>
             </div>
 
-            <!-- Frequency Switcher -->
-            <div class="frequency-pill-group" role="radiogroup" aria-label="Donation frequency">
-              <button type="button" class="frequency-btn active" data-freq="once" role="radio" aria-checked="true">
-                <span>Give Once</span>
-              </button>
-              <button type="button" class="frequency-btn" data-freq="monthly" role="radio" aria-checked="false">
-                <span>Monthly Partner</span>
-                <span class="freq-tag">Most Needed</span>
-              </button>
+            <!-- Impact Tier Selection Grid (2x2) -->
+            <div style="margin-bottom: 0.65rem;">
+              <span style="font-family: var(--font-sans); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #64748B; display: block; margin-bottom: 0.65rem;">
+                Select Impact Tier
+              </span>
             </div>
 
-            <!-- Preset Amount Grid -->
-            <div class="amount-btn-grid" role="radiogroup" aria-label="Donation amount in Philippine Pesos">
-              <button type="button" class="amount-btn" data-amount="500" role="radio" aria-checked="false">
-                <span class="amount-val">₱500</span>
-                <span class="amount-desc">School &amp; clean-up kit for 1 youth volunteer</span>
-              </button>
-              <button type="button" class="amount-btn active" data-amount="1000" role="radio" aria-checked="true">
-                <span class="amount-val">₱1,000</span>
-                <span class="amount-desc">Starter materials for 1 soap-making livelihood family</span>
-              </button>
-              <button type="button" class="amount-btn" data-amount="2500" role="radio" aria-checked="false">
-                <span class="amount-val">₱2,500</span>
-                <span class="amount-desc">Protective equipment for a 10-person coastal clean-up crew</span>
-              </button>
-              <button type="button" class="amount-btn" data-amount="500" data-amount="5000" role="radio" aria-checked="false">
-                <span class="amount-val">₱5,000</span>
-                <span class="amount-desc">Fisherfolk legal advocacy &amp; RDC policy research session</span>
-              </button>
+            <div class="impact-tier-grid" role="radiogroup" aria-label="Impact donation tier">
+              
+              <!-- Tier 1 -->
+              <div class="impact-tier-card" data-amount="500" role="radio" aria-checked="false" tabindex="0">
+                <div class="tier-top-row">
+                  <span class="tier-amount">₱500</span>
+                  <span class="tier-check-icon">✓</span>
+                </div>
+                <div class="tier-title">Youth Drug-Free Kit</div>
+                <div class="tier-desc">Subsidizes student peer resilience workbook &amp; sports equipment for 1 coastal youth</div>
+              </div>
+
+              <!-- Tier 2 (Default Active) -->
+              <div class="impact-tier-card active" data-amount="1500" role="radio" aria-checked="true" tabindex="0">
+                <div class="tier-top-row">
+                  <span class="tier-amount">₱1,500</span>
+                  <span class="tier-check-icon">✓</span>
+                </div>
+                <div class="tier-title">Coastal Clean-up Drive</div>
+                <div class="tier-desc">Supplies eco-sacks, gloves, hydration, and safe bio-waste logistics for 100m shoreline</div>
+              </div>
+
+              <!-- Tier 3 -->
+              <div class="impact-tier-card" data-amount="3500" role="radio" aria-checked="false" tabindex="0">
+                <div class="tier-top-row">
+                  <span class="tier-amount">₱3,500</span>
+                  <span class="tier-check-icon">✓</span>
+                </div>
+                <div class="tier-title">Artisanal Fisherfolk Gear</div>
+                <div class="tier-desc">Funds safety beacons, handheld marine lighting, and repair kits for artisanal municipal boats</div>
+              </div>
+
+              <!-- Tier 4 -->
+              <div class="impact-tier-card" data-amount="10000" role="radio" aria-checked="false" tabindex="0">
+                <div class="tier-top-row">
+                  <span class="tier-amount">₱10,000</span>
+                  <span class="tier-check-icon">✓</span>
+                </div>
+                <div class="tier-title">Livelihood Cooperative Seed</div>
+                <div class="tier-desc">Micro-grant for soap making and processing starter kits for a 10-person women's village cluster</div>
+              </div>
             </div>
 
             <!-- Custom Amount Field -->
-            <div class="custom-amount-wrap">
-              <span class="currency-symbol" aria-hidden="true">₱</span>
-              <input type="number" id="custom-amount" class="custom-amount-input" placeholder="Or enter custom amount (min. ₱100)" min="100" step="50" aria-label="Enter custom donation amount in Philippine Pesos">
+            <div style="margin-bottom: 1.35rem;">
+              <label for="custom-amount" style="font-family: var(--font-sans); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #64748B; display: block; margin-bottom: 0.5rem;">
+                Or Enter Custom Amount
+              </label>
+              <div style="position: relative; display: flex; align-items: center;">
+                <span style="position: absolute; left: 1rem; font-size: 1.15rem; font-weight: 700; color: #0B1B2B;">₱</span>
+                <input type="number" id="custom-amount" value="1500" min="100" step="50" style="width: 100%; padding: 0.75rem 3.5rem 0.75rem 2.2rem; font-size: 1.1rem; font-weight: 700; border: 1.5px solid #CBD5E1; border-radius: 10px; color: #0B1B2B;" aria-label="Enter custom donation amount">
+                <span id="currency-label-addon" style="position: absolute; right: 1rem; font-size: 0.8rem; font-weight: 800; color: #64748B;">PHP</span>
+              </div>
             </div>
 
-            <!-- Program Designation -->
-            <div class="form-group">
-              <label for="donation-cause" class="form-label">
-                Direct My Donation To:
+            <!-- Project Allocation Dropdown -->
+            <div style="margin-bottom: 1.5rem;">
+              <label for="donation-cause" style="font-family: var(--font-sans); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #64748B; display: block; margin-bottom: 0.5rem;">
+                Designate Contribution To
               </label>
-              <select id="donation-cause" class="form-control" style="font-weight: 600;">
-                <option value="Where Most Needed" selected>Where Most Needed (General Grassroots Fund)</option>
-                <option value="Fishery Sector Livelihood Program">Fishery Sector &amp; Coastal Livelihood Program</option>
-                <option value="Youth Anti-Drug & Digital Advocacy">Youth Anti-Drug &amp; Digital Literacy Resilience</option>
-                <option value="Marine Conservation & Cleanups">Marine Environmental Conservation &amp; Clean-ups</option>
+              <select id="donation-cause" class="form-control" style="font-weight: 600; border-radius: 10px; border: 1.5px solid #CBD5E1; padding: 0.75rem 1rem;">
+                <option value="Where Most Needed" selected>Priority Need (Where funds are needed most)</option>
+                <option value="Fishery Sector Livelihood Program">Artisanal Fisherfolk Welfare &amp; Sanctuary Defense</option>
+                <option value="Coastal Cleanup & Mangrove Care">Coastal Cleanup &amp; Mangrove Care</option>
+                <option value="Youth Anti-Drug Leadership">Youth Anti-Drug Leadership (NYC I DARE)</option>
+                <option value="Women Soap Making Micro-Enterprise">Women Soap Making Micro-Enterprise</option>
               </select>
             </div>
 
-            <!-- Donor Information -->
-            <div class="donate-card-header" style="margin-top: 2rem;">
-              <h2 class="donate-card-title">
-                <span class="donate-step-num" aria-hidden="true">2</span>
-                <span>Donor Details</span>
-              </h2>
+            <!-- Online Payment Channels -->
+            <div style="margin-bottom: 0.65rem;">
+              <span style="font-family: var(--font-sans); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #64748B; display: block; margin-bottom: 0.65rem;">
+                Select Payment Channel
+              </span>
             </div>
 
-            <form id="donation-payment-form" novalidate>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-                <div class="form-group">
-                  <label for="donor-first-name" class="form-label">First Name <span class="req">*</span></label>
-                  <input type="text" id="donor-first-name" class="form-control" placeholder="Juan" required autocomplete="given-name">
-                  <span class="form-feedback" id="first-name-error">Please provide your first name.</span>
-                </div>
-                <div class="form-group">
-                  <label for="donor-last-name" class="form-label">Last Name <span class="req">*</span></label>
-                  <input type="text" id="donor-last-name" class="form-control" placeholder="Dela Cruz" required autocomplete="family-name">
-                  <span class="form-feedback" id="last-name-error">Please provide your last name.</span>
-                </div>
-              </div>
+            <div class="channels-grid" role="tablist" aria-label="Payment channels">
+              <button type="button" class="channel-btn active" data-channel="gcash">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg>
+                <span>GCash</span>
+              </button>
+              <button type="button" class="channel-btn" data-channel="maya">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l2 2 4-4"></path></svg>
+                <span>Maya</span>
+              </button>
+              <button type="button" class="channel-btn" data-channel="card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                <span>Card</span>
+              </button>
+              <button type="button" class="channel-btn" data-channel="bank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 3l9 7H3l9-7z"></path></svg>
+                <span>Bank</span>
+              </button>
+              <button type="button" class="channel-btn" data-channel="qrph">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+                <span>QR-Ph</span>
+              </button>
+              <button type="button" class="channel-btn" data-channel="paypal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 7.5c0 2.5-2 4.5-4.5 4.5H9l-1.5 7.5h-4L6 4.5h7c2.5 0 4.5 1 4.5 3z"></path></svg>
+                <span>PayPal</span>
+              </button>
+            </div>
 
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-                <div class="form-group">
-                  <label for="donor-email" class="form-label">Email Address (for Official Digital Receipt) <span class="req">*</span></label>
-                  <input type="email" id="donor-email" class="form-control" placeholder="juan@example.ph" required autocomplete="email">
+            <!-- Donor Form Inputs -->
+            <form id="donation-payment-form" novalidate>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label for="donor-full-name" class="form-label" style="font-size: 0.8rem; font-weight: 700;">Full Name (for official tax receipt) <span class="req">*</span></label>
+                  <input type="text" id="donor-full-name" class="form-control" placeholder="Maria Elena Santos" required autocomplete="name" style="border-radius: 8px;">
+                  <span class="form-feedback" id="full-name-error">Please provide your full name for tax receipting.</span>
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label for="donor-email" class="form-label" style="font-size: 0.8rem; font-weight: 700;">Email Address (for instant e-receipt) <span class="req">*</span></label>
+                  <input type="email" id="donor-email" class="form-control" placeholder="maria.santos@philippines-mail.com" required autocomplete="email" style="border-radius: 8px;">
                   <span class="form-feedback" id="email-error">Please enter a valid email address.</span>
                 </div>
-                <div class="form-group">
-                  <label for="donor-phone" class="form-label">Mobile Number (Optional)</label>
-                  <input type="tel" id="donor-phone" class="form-control" placeholder="0917-XXX-XXXX" autocomplete="tel">
-                </div>
               </div>
 
-              <div class="form-group" style="margin-bottom: 1rem;">
-                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer; color: var(--color-heading);">
-                  <input type="checkbox" id="anon-check" style="width: 17px; height: 17px; accent-color: #10B981;">
-                  <span>Make my donation anonymous on partner recognitions</span>
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.84rem; cursor: pointer; color: #475569;">
+                  <input type="checkbox" id="anon-check" style="width: 16px; height: 16px; accent-color: #10B981;">
+                  <span>Send my donation anonymously (do not list name on public annual report)</span>
                 </label>
               </div>
 
-              <!-- Payment Method Selection -->
-              <div class="donate-card-header" style="margin-top: 2rem;">
-                <h2 class="donate-card-title">
-                  <span class="donate-step-num" aria-hidden="true">3</span>
-                  <span>Select Payment Channel</span>
-                </h2>
-              </div>
-
-              <!-- Payment Tabs -->
-              <div class="payment-tabs-nav" role="tablist" aria-label="Payment method choices">
-                <button type="button" class="payment-tab-btn active" data-method="gcash" role="tab" aria-selected="true" id="tab-gcash">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                  <span>GCash / Maya (QR Ph)</span>
-                </button>
-                <button type="button" class="payment-tab-btn" data-method="card" role="tab" aria-selected="false" id="tab-card">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                  </svg>
-                  <span>Credit / Debit Card</span>
-                </button>
-                <button type="button" class="payment-tab-btn" data-method="bank" role="tab" aria-selected="false" id="tab-bank">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 3l9 7H3l9-7z"></path>
-                  </svg>
-                  <span>Bank Deposit (LBP)</span>
-                </button>
-              </div>
-
-              <!-- Payment Panel 1: GCash / Maya (QR Ph) -->
-              <div class="payment-tab-panel active" id="panel-gcash" role="tabpanel" aria-labelledby="tab-gcash">
-                <div class="qr-ph-box">
-                  <!-- QR Code Mock Graphic -->
-                  <div class="qr-code-img" aria-hidden="true">
-                    <svg width="84" height="84" viewBox="0 0 100 100" fill="none">
-                      <!-- Corner Square 1 -->
-                      <rect x="5" y="5" width="28" height="28" rx="4" fill="#0B1B2B"></rect>
-                      <rect x="9" y="9" width="20" height="20" rx="2" fill="#FFFFFF"></rect>
-                      <rect x="13" y="13" width="12" height="12" rx="1" fill="#10B981"></rect>
-                      <!-- Corner Square 2 -->
-                      <rect x="67" y="5" width="28" height="28" rx="4" fill="#0B1B2B"></rect>
-                      <rect x="71" y="9" width="20" height="20" rx="2" fill="#FFFFFF"></rect>
-                      <rect x="75" y="13" width="12" height="12" rx="1" fill="#10B981"></rect>
-                      <!-- Corner Square 3 -->
-                      <rect x="5" y="67" width="28" height="28" rx="4" fill="#0B1B2B"></rect>
-                      <rect x="9" y="71" width="20" height="20" rx="2" fill="#FFFFFF"></rect>
-                      <rect x="13" y="75" width="12" height="12" rx="1" fill="#10B981"></rect>
-                      <!-- QR Data Pattern Matrix -->
-                      <rect x="42" y="12" width="6" height="6" fill="#0B1B2B"></rect>
-                      <rect x="52" y="12" width="6" height="6" fill="#0EA5E9"></rect>
-                      <rect x="42" y="24" width="16" height="6" fill="#0B1B2B"></rect>
-                      <rect x="12" y="42" width="6" height="16" fill="#0B1B2B"></rect>
-                      <rect x="24" y="42" width="8" height="8" fill="#10B981"></rect>
-                      <rect x="40" y="40" width="20" height="20" rx="3" fill="#0B1B2B"></rect>
-                      <rect x="45" y="45" width="10" height="10" rx="1" fill="#38BDF8"></rect>
-                      <rect x="70" y="42" width="8" height="8" fill="#0B1B2B"></rect>
-                      <rect x="84" y="42" width="8" height="16" fill="#10B981"></rect>
-                      <rect x="42" y="70" width="8" height="14" fill="#0EA5E9"></rect>
-                      <rect x="56" y="76" width="14" height="8" fill="#0B1B2B"></rect>
-                      <rect x="76" y="70" width="16" height="16" fill="#0B1B2B"></rect>
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="qr-meta-title">Scan QR Ph with GCash, Maya, or Bank App</div>
-                    <div class="qr-meta-sub">
-                      Merchant: <strong>FRIENDSHIP GOALS SOCIETY CARAGA-BUTUAN INC.</strong><br>
-                      Instant real-time verification via InstaPay / QR Ph National Standard.
-                    </div>
-                    <span class="qr-badge-ph">QR Ph National Standard</span>
-                  </div>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 0;">
-                  <label for="gcash-mobile" class="form-label">Or enter GCash Mobile for Express Payment:</label>
-                  <input type="tel" id="gcash-mobile" class="form-control" placeholder="09XX-XXX-XXXX" maxlength="13">
-                </div>
-              </div>
-
-              <!-- Payment Panel 2: Credit / Debit Card -->
-              <div class="payment-tab-panel" id="panel-card" role="tabpanel" aria-labelledby="tab-card">
-                <div class="form-group">
-                  <label for="card-name" class="form-label">Name on Card <span class="req">*</span></label>
-                  <input type="text" id="card-name" class="form-control" placeholder="Juan Dela Cruz" autocomplete="cc-name">
-                </div>
-                <div class="form-group">
-                  <label for="card-num" class="form-label">Card Number <span class="req">*</span></label>
-                  <input type="text" id="card-num" class="form-control" placeholder="4123 4567 8901 2345" maxlength="19" autocomplete="cc-number">
-                </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                  <div class="form-group" style="margin-bottom: 0;">
-                    <label for="card-exp" class="form-label">Expiry (MM/YY) <span class="req">*</span></label>
-                    <input type="text" id="card-exp" class="form-control" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp">
-                  </div>
-                  <div class="form-group" style="margin-bottom: 0;">
-                    <label for="card-cvv" class="form-label">CVV / CVC <span class="req">*</span></label>
-                    <input type="password" id="card-cvv" class="form-control" placeholder="123" maxlength="4" autocomplete="cc-csc">
-                  </div>
-                </div>
-              </div>
-
-              <!-- Payment Panel 3: Bank Transfer -->
-              <div class="payment-tab-panel" id="panel-bank" role="tabpanel" aria-labelledby="tab-bank">
-                <div class="bank-info-box">
-                  <div class="bank-row">
-                    <span style="font-weight: 600;">Bank Name:</span>
-                    <span>Land Bank of the Philippines (LBP)</span>
-                  </div>
-                  <div class="bank-row">
-                    <span style="font-weight: 600;">Branch:</span>
-                    <span>Butuan City Main Branch</span>
-                  </div>
-                  <div class="bank-row">
-                    <span style="font-weight: 600;">Account Name:</span>
-                    <span>Friendship Goals Society Caraga-Butuan Inc.</span>
-                  </div>
-                  <div class="bank-row" style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed var(--color-surface-border);">
-                    <span style="font-weight: 800; color: #10B981;">Account No.:</span>
-                    <span style="display: flex; align-items: center; gap: 8px;">
-                      <strong id="bank-acc-num" style="font-family: monospace; font-size: 1.05rem;">0841-3291-58</strong>
-                      <button type="button" class="bank-copy-btn" id="copy-acc-btn">Copy</button>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 0;">
-                  <label for="bank-ref" class="form-label">Deposit Slip / Bank Reference Number:</label>
-                  <input type="text" id="bank-ref" class="form-control" placeholder="e.g. LBP-TXN-847291">
-                </div>
-              </div>
-
-              <!-- Dynamic Submit Button -->
-              <button type="submit" class="donate-cta-btn" id="donate-submit-btn">
-                <span id="donate-btn-text">Complete Donation of ₱1,000 →</span>
+              <!-- Main Dynamic CTA Button -->
+              <button type="submit" class="donate-cta-btn" id="donate-submit-btn" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); color: #FFFFFF; font-size: 1rem; font-weight: 800; border-radius: 9999px; padding: 0.95rem 2rem; width: 100%; border: none; box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: transform 0.2s ease;">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span id="donate-btn-text">Donate ₱1,500 Monthly</span>
               </button>
 
-              <!-- Security Badges Strip -->
-              <div class="trust-badges-strip">
-                <span class="trust-badge-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  <span>256-Bit SSL Encrypted</span>
-                </span>
-                <span class="trust-badge-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                  <span>SEC Non-Profit Registered</span>
-                </span>
-                <span class="trust-badge-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                  <span>Official BIR-Compliant e-Receipt</span>
-                </span>
+              <div style="text-align: center; margin-top: 1rem; font-size: 0.74rem; color: #94A3B8; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>SSL 256-Bit Encrypted &bull; Registered Philippine NGO &bull; Direct Bank Audited Accountability</span>
               </div>
             </form>
           </div>
 
-          <!-- Right Column: Transparency, Impact & FAQs -->
+          <!-- Right Column: Sidebar Live Tracker & Transparency Widgets -->
           <div class="donate-sidebar">
 
-            <!-- Card 1: Fund Allocation Transparency -->
-            <div class="sidebar-impact-card">
-              <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--color-heading); margin-bottom: 0.5rem;">
-                Where Your Donation Goes
-              </h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.35rem;">
-                FGSCBI maintains strict financial transparency and public accountability for every peso entrusted to our programs.
-              </p>
+            <!-- Card 1: Q3 2026 COMMUNITY IMPACT Live Tracker -->
+            <div class="sidebar-impact-box">
+              <div class="box-top-meta">
+                <span>Q3 2026 COMMUNITY IMPACT</span>
+                <span class="badge-live-tracker">&bull; LIVE TRACKER</span>
+              </div>
+              <div style="display: flex; align-items: baseline; margin-bottom: 0.5rem;">
+                <span class="tracker-amount">₱425,800</span>
+                <span class="tracker-goal">raised toward ₱500,000 goal</span>
+              </div>
+              
+              <!-- Progress Bar -->
+              <div style="width: 100%; height: 8px; background: #E2E8F0; border-radius: 9999px; overflow: hidden; margin-bottom: 0.85rem;">
+                <div style="width: 85%; height: 100%; background: linear-gradient(90deg, #10B981, #059669); border-radius: 9999px;"></div>
+              </div>
 
-              <!-- Progress Bars -->
-              <div class="impact-metric-bar">
-                <div class="impact-bar-header">
-                  <span>Direct Grassroots Community Programs</span>
+              <!-- Mini Stats Grid -->
+              <div class="tracker-stats-grid">
+                <div>
+                  <div class="tracker-stat-num">248</div>
+                  <div class="tracker-stat-label">Active Donors</div>
+                </div>
+                <div>
+                  <div class="tracker-stat-num">14</div>
+                  <div class="tracker-stat-label">Barangays</div>
+                </div>
+                <div>
+                  <div class="tracker-stat-num">1,820 hrs</div>
+                  <div class="tracker-stat-label">Hours Invested</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Where Your Peso Goes -->
+            <div class="sidebar-impact-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #0B1B2B; margin: 0;">
+                  Where Your Peso Goes
+                </h3>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+
+              <!-- Multi-segment bar -->
+              <div style="display: flex; height: 8px; border-radius: 9999px; overflow: hidden; margin-bottom: 1rem;">
+                <div style="width: 85%; background: #10B981;"></div>
+                <div style="width: 10%; background: #0EA5E9;"></div>
+                <div style="width: 5%; background: #64748B;"></div>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.8rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #334155;">
+                    <span style="width: 8px; height: 8px; border-radius: 50%; background: #10B981;"></span>
+                    Direct Program Delivery (Mangrove, Patrol, Kits)
+                  </span>
                   <strong style="color: #10B981;">85%</strong>
                 </div>
-                <div class="impact-progress-track">
-                  <div class="impact-progress-fill" style="width: 85%;"></div>
-                </div>
-              </div>
-
-              <div class="impact-metric-bar">
-                <div class="impact-bar-header">
-                  <span>Regional Fisherfolk Policy Advocacy</span>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #334155;">
+                    <span style="width: 8px; height: 8px; border-radius: 50%; background: #0EA5E9;"></span>
+                    Community Logistics &amp; Coordination
+                  </span>
                   <strong style="color: #0EA5E9;">10%</strong>
                 </div>
-                <div class="impact-progress-track">
-                  <div class="impact-progress-fill" style="width: 10%; background: linear-gradient(90deg, #0EA5E9, #38BDF8);"></div>
-                </div>
-              </div>
-
-              <div class="impact-metric-bar">
-                <div class="impact-bar-header">
-                  <span>Audit, Accounting &amp; Public Transparency</span>
-                  <strong style="color: var(--color-text-muted);">5%</strong>
-                </div>
-                <div class="impact-progress-track">
-                  <div class="impact-progress-fill" style="width: 5%; background: #64748B;"></div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #334155;">
+                    <span style="width: 8px; height: 8px; border-radius: 50%; background: #64748B;"></span>
+                    Administration &amp; Auditing (0% Overhead)
+                  </span>
+                  <strong style="color: #64748B;">5%</strong>
                 </div>
               </div>
             </div>
 
-            <!-- Card 2: Institutional Credibility -->
-            <div class="sidebar-trust-card">
-              <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--color-heading); margin-bottom: 0.5rem;">
-                Governance &amp; Accreditation
-              </h3>
-              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; color: var(--color-text);">
-                <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 0.85rem;">
-                  <span style="color: #10B981; font-weight: 800;">✓</span>
-                  <span><strong>Caraga RDC Private Sector Representative</strong> for the Fishery Sector (Region XIII).</span>
-                </li>
-                <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 0.85rem;">
-                  <span style="color: #10B981; font-weight: 800;">✓</span>
-                  <span><strong>Securities &amp; Exchange Commission</strong> Registered Non-Profit (SEC CN2021-08942).</span>
-                </li>
-                <li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 0.85rem;">
-                  <span style="color: #10B981; font-weight: 800;">✓</span>
-                  <span>Program evaluations partnered with <strong>DOLE</strong>, <strong>DSWD Caraga</strong>, and <strong>NYC</strong>.</span>
-                </li>
-                <li style="display: flex; gap: 10px; align-items: flex-start;">
-                  <span style="color: #10B981; font-weight: 800;">✓</span>
-                  <span>Zero administrative skimming; every contribution supports local Caraga families.</span>
-                </li>
-              </ul>
+            <!-- Card 3: Testimonial Quote -->
+            <div class="sidebar-impact-box" style="background: #F8FAFC;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <img src="assets/images/leader-maria-santos.jpg" alt="Juanita G. Magpayo" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid #10B981;">
+                <div>
+                  <div style="font-size: 0.85rem; font-weight: 700; color: #0B1B2B;">Juanita G. Magpayo</div>
+                  <div style="font-size: 0.7rem; color: #64748B;">Annual Sustainer &amp; Butuan City Civic Partner</div>
+                </div>
+              </div>
+              <p style="font-size: 0.82rem; color: #475569; line-height: 1.5; font-style: italic; margin: 0;">
+                &ldquo;Through Friendship Goals Society, our quarterly contribution directly secures fuel and safety kits for artisanal fishers across Butuan Bay. Truly transparent and active.&rdquo;
+              </p>
             </div>
 
-            <!-- Card 3: Donor FAQs -->
-            <div class="sidebar-trust-card">
-              <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--color-heading); margin-bottom: 0.85rem;">
-                Frequently Asked Questions
-              </h3>
-              <details style="margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-surface-border); padding-bottom: 0.65rem;">
-                <summary style="font-size: 0.88rem; font-weight: 700; cursor: pointer; color: var(--color-heading);">
-                  Will I receive an official receipt?
-                </summary>
-                <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 0.4rem; line-height: 1.5;">
-                  Yes! An official electronic receipt is generated instantly upon payment confirmation and emailed directly to your specified address.
-                </p>
-              </details>
-              <details style="margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-surface-border); padding-bottom: 0.65rem;">
-                <summary style="font-size: 0.88rem; font-weight: 700; cursor: pointer; color: var(--color-heading);">
-                  Can overseas or international donors contribute?
-                </summary>
-                <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 0.4rem; line-height: 1.5;">
-                  Yes. Overseas donors and OFWs can contribute via Visa, Mastercard, or bank wire transfer. Amounts in other currencies are converted automatically at standard bank rates.
-                </p>
-              </details>
-              <details>
-                <summary style="font-size: 0.88rem; font-weight: 700; cursor: pointer; color: var(--color-heading);">
-                  Can I donate in-kind supplies or equipment?
-                </summary>
-                <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 0.4rem; line-height: 1.5;">
-                  Yes. We gratefully accept in-kind donations of coastal clean-up gear, safety vests, and youth educational materials. Please <a href="contact.html">contact our secretariat</a> to coordinate logistics.
-                </p>
-              </details>
-            </div>
+            <!-- Card 4: Direct Bank & QR-Ph Transfer -->
+            <div class="sidebar-impact-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                <div style="font-size: 0.85rem; font-weight: 700; color: #0B1B2B; display: inline-flex; align-items: center; gap: 0.4rem;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 3l9 7H3l9-7z"></path></svg>
+                  <span>Direct Bank &amp; QR-Ph Transfer</span>
+                </div>
+                <a href="#donation-card" style="font-size: 0.7rem; font-weight: 800; color: #059669; text-decoration: none;">REPORT DRAFT &rarr;</a>
+              </div>
 
-            <!-- Card 4: Need Assistance -->
-            <div style="background: rgba(16, 185, 129, 0.08); border: 1px dashed rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 1.25rem; font-size: 0.85rem; color: var(--color-heading);">
-              <strong style="display: block; margin-bottom: 4px; color: #10B981;">Need donation assistance?</strong>
-              Call our official secretariat hotline at <a href="tel:+639099873083" style="font-weight: 700;">+63-909-987-3083</a> or email <a href="mailto:contact@fgscbi.org" style="font-weight: 700;">contact@fgscbi.org</a>.
+              <div style="font-size: 0.76rem; color: #334155; display: flex; flex-direction: column; gap: 0.45rem;">
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #E2E8F0; padding-bottom: 0.35rem;">
+                  <span style="font-weight: 600;">BDO UNIBANK BUTUAN:</span>
+                  <span style="font-family: monospace; font-weight: 700; color: #0284C7;">0076-3021-4891</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #E2E8F0; padding-bottom: 0.35rem;">
+                  <span style="font-weight: 600;">GCASH BIZ DIRECT:</span>
+                  <span style="font-weight: 700; color: #059669;">1-Click Scan QR Code</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="font-weight: 600;">ALLIED IRIS SWIFT CODE:</span>
+                  <span style="font-family: monospace; font-weight: 700;">BNORPHMM</span>
+                </div>
+              </div>
+              <p style="font-size: 0.68rem; color: #94A3B8; margin-top: 0.65rem; margin-bottom: 0;">
+                For bank wires and check donations, official receipt issued on same day after receiving bank transaction slip.
+              </p>
             </div>
 
           </div>
 
         </div>
+
+        <!-- Bottom Section 1: Institutional Trust & Governance (3 Cards) -->
+        <div style="margin-top: 4.5rem; text-align: center;">
+          <div style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #0EA5E9; margin-bottom: 0.35rem;">
+            100% ACCOUNTABILITY GUARANTEE
+          </div>
+          <h2 style="font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: #0B1B2B; margin-bottom: 0.5rem;">
+            Institutional Trust &amp; Governance
+          </h2>
+          <p style="font-size: 0.9rem; color: #64748B; max-width: 680px; margin: 0 auto 2.5rem;">
+            FGSCBI operates with team funds integrity, verified by the accredited Private Sector Representation for Fisheries in the Caraga Regional Development Council.
+          </p>
+
+          <div class="grid-3" style="text-align: left;">
+            
+            <!-- Trust Card 1 -->
+            <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 1.65rem; box-shadow: 0 4px 16px rgba(11, 27, 43, 0.04);">
+              <div style="width: 42px; height: 42px; border-radius: 10px; background: #ECFDF5; color: #059669; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              </div>
+              <h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #0B1B2B; margin-bottom: 0.5rem;">
+                BIR &amp; RDC Tax Receipts
+              </h3>
+              <p style="font-size: 0.82rem; color: #64748B; line-height: 1.5; margin-bottom: 1rem;">
+                Every donation receives an official digital receipt recognized by Philippine tax authorities and regional civic oversight.
+              </p>
+              <a href="contact.html?type=receipt#contact-form" style="font-size: 0.75rem; font-weight: 800; color: #0284C7; text-decoration: none;">VERIFY RECEIPT PROTOCOLS &rarr;</a>
+            </div>
+
+            <!-- Trust Card 2 -->
+            <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 1.65rem; box-shadow: 0 4px 16px rgba(11, 27, 43, 0.04);">
+              <div style="width: 42px; height: 42px; border-radius: 10px; background: #F0F9FF; color: #0284C7; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #0B1B2B; margin-bottom: 0.5rem;">
+                Audited Financials Online
+              </h3>
+              <p style="font-size: 0.82rem; color: #64748B; line-height: 1.5; margin-bottom: 1rem;">
+                Transparent annual statements filed with the SEC and posted publicly for civic accountability and public monitoring.
+              </p>
+              <a href="about.html#facts-section" style="font-size: 0.75rem; font-weight: 800; color: #0284C7; text-decoration: none;">DOWNLOAD 2024 AUDIT &rarr;</a>
+            </div>
+
+            <!-- Trust Card 3 -->
+            <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 1.65rem; box-shadow: 0 4px 16px rgba(11, 27, 43, 0.04);">
+              <div style="width: 42px; height: 42px; border-radius: 10px; background: #FAF5FF; color: #9333EA; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #0B1B2B; margin-bottom: 0.5rem;">
+                Regional Council Oversight
+              </h3>
+              <p style="font-size: 0.82rem; color: #64748B; line-height: 1.5; margin-bottom: 1rem;">
+                Independent reviews ensure all project disbursements directly benefit coastal and youth stakeholders across Butuan City.
+              </p>
+              <a href="recognitions.html" style="font-size: 0.75rem; font-weight: 800; color: #0284C7; text-decoration: none;">VIEW OUR ACCREDITATIONS &rarr;</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom Section 2: Institutional or Corporate Sponsor? -->
+        <div class="corporate-sponsor-card fade-in-up">
+          <div class="corporate-grid">
+            <div>
+              <div style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 9999px; padding: 0.25rem 0.8rem; font-size: 0.72rem; font-weight: 700; color: #34D399; margin-bottom: 1rem;">
+                <span class="badge-dot-green"></span>
+                <span>Corporate Social Responsibility (CSR)</span>
+              </div>
+              <h2 style="font-family: var(--font-display); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700; color: #FFFFFF; line-height: 1.2; margin-bottom: 0.75rem;">
+                Institutional or Corporate Sponsor?
+              </h2>
+              <p style="font-size: 0.9rem; color: #94A3B8; line-height: 1.6; margin-bottom: 1.75rem;">
+                Partner with FGSCBI for designated barangay adoptions, carbon-offset mangrove planting plots, solar fisher gear installations, or regional youth anti-drug campaigns. Complete MOA agreements and audited impact metrics provided.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="contact.html?type=corporate#contact-form" class="btn-auth-solid">
+                  Initiate Corporate Partnership
+                </a>
+                <a href="contact.html#contact-form" class="btn-auth-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Request CSR Brief Guide (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <figure style="margin: 0; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+                <img src="assets/images/coastal-cleanup-community.jpg" alt="Mangrove & Marine Sanctuary Adoption Site" style="width: 100%; height: 230px; object-fit: cover;">
+                <figcaption style="position: absolute; bottom: 0; inset-inline: 0; background: linear-gradient(transparent, rgba(7, 23, 38, 0.9)); color: #FFFFFF; font-size: 0.75rem; font-weight: 700; padding: 1rem 0.85rem 0.5rem; text-align: center;">
+                  Mangrove &amp; Marine Sanctuary Adoption Site
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -695,41 +733,44 @@
   <!-- Interactive Donation Logic -->
   <script>
   document.addEventListener('DOMContentLoaded', () => {
-    let currentAmount = 1000;
-    let currentFreq = 'once';
+    let currentAmount = 1500;
+    let currentFreq = 'monthly';
+    let currentCurrency = 'PHP';
     let currentMethod = 'gcash';
 
-    const amountButtons = document.querySelectorAll('.amount-btn');
+    const tierCards = document.querySelectorAll('.impact-tier-card');
     const customInput = document.getElementById('custom-amount');
-    const freqButtons = document.querySelectorAll('.frequency-btn');
+    const currencyLabelAddon = document.getElementById('currency-label-addon');
+    const freqButtons = document.querySelectorAll('.freq-pill-btn');
+    const currButtons = document.querySelectorAll('.currency-toggle-btn');
+    const channelButtons = document.querySelectorAll('.channel-btn');
     const submitBtn = document.getElementById('donate-submit-btn');
     const btnText = document.getElementById('donate-btn-text');
-    const paymentTabBtns = document.querySelectorAll('.payment-tab-btn');
-    const paymentPanels = document.querySelectorAll('.payment-tab-panel');
-    const copyAccBtn = document.getElementById('copy-acc-btn');
-    const bankAccNum = document.getElementById('bank-acc-num');
     const donationForm = document.getElementById('donation-payment-form');
     const receiptModal = document.getElementById('receipt-modal');
     const closeReceiptBtn = document.getElementById('close-receipt-btn');
     const printReceiptBtn = document.getElementById('print-receipt-btn');
 
     function updateSubmitButton() {
-      const formatted = new Intl.NumberFormat('en-PH', { style: 'currency', currency: 'PHP', maximumFractionDigits: 0 }).format(currentAmount);
-      const freqLabel = currentFreq === 'monthly' ? '/ month' : 'Now';
-      btnText.textContent = `Complete Donation of ${formatted} ${freqLabel} →`;
+      const sym = currentCurrency === 'PHP' ? '₱' : '$';
+      const formatted = `${sym}${currentAmount.toLocaleString('en-US')}`;
+      const freqLabel = currentFreq === 'monthly' ? 'Monthly' : 'Once';
+      if (btnText) {
+        btnText.textContent = `Donate ${formatted} ${freqLabel}`;
+      }
     }
 
-    // Preset Amount Click Handler
-    amountButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        amountButtons.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-checked', 'false');
+    // Impact Tier Click Handler
+    tierCards.forEach(card => {
+      card.addEventListener('click', () => {
+        tierCards.forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-checked', 'false');
         });
-        btn.classList.add('active');
-        btn.setAttribute('aria-checked', 'true');
-        currentAmount = parseInt(btn.dataset.amount, 10);
-        if (customInput) customInput.value = '';
+        card.classList.add('active');
+        card.setAttribute('aria-checked', 'true');
+        currentAmount = parseInt(card.dataset.amount, 10);
+        if (customInput) customInput.value = currentAmount;
         updateSubmitButton();
       });
     });
@@ -739,9 +780,14 @@
       customInput.addEventListener('input', () => {
         const val = parseInt(customInput.value, 10);
         if (!isNaN(val) && val >= 10) {
-          amountButtons.forEach(b => {
-            b.classList.remove('active');
-            b.setAttribute('aria-checked', 'false');
+          tierCards.forEach(c => {
+            if (parseInt(c.dataset.amount, 10) === val) {
+              c.classList.add('active');
+              c.setAttribute('aria-checked', 'true');
+            } else {
+              c.classList.remove('active');
+              c.setAttribute('aria-checked', 'false');
+            }
           });
           currentAmount = val;
           updateSubmitButton();
@@ -753,96 +799,73 @@
     freqButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         freqButtons.forEach(b => {
-          b.classList.remove('active');
+          b.classList.remove('active', 'active-monthly');
           b.setAttribute('aria-checked', 'false');
         });
-        btn.classList.add('active');
+        const freq = btn.dataset.freq;
+        currentFreq = freq;
+        if (freq === 'monthly') {
+          btn.classList.add('active-monthly');
+        } else {
+          btn.classList.add('active');
+        }
         btn.setAttribute('aria-checked', 'true');
-        currentFreq = btn.dataset.freq;
         updateSubmitButton();
       });
     });
 
-    // Payment Tab Switcher
-    paymentTabBtns.forEach(btn => {
+    // Currency Switcher
+    currButtons.forEach(btn => {
       btn.addEventListener('click', () => {
-        const method = btn.dataset.method;
-        currentMethod = method;
-
-        paymentTabBtns.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
+        currButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-
-        paymentPanels.forEach(panel => {
-          panel.classList.remove('active');
-        });
-        const targetPanel = document.getElementById('panel-' + method);
-        if (targetPanel) targetPanel.classList.add('active');
+        currentCurrency = btn.dataset.curr;
+        if (currencyLabelAddon) currencyLabelAddon.textContent = currentCurrency;
+        updateSubmitButton();
       });
     });
 
-    // Copy Account Number
-    if (copyAccBtn && bankAccNum) {
-      copyAccBtn.addEventListener('click', async () => {
-        const textToCopy = bankAccNum.textContent.trim();
-        try {
-          await navigator.clipboard.writeText(textToCopy);
-          const originalText = copyAccBtn.textContent;
-          copyAccBtn.textContent = 'Copied!';
-          copyAccBtn.style.background = '#10B981';
-          copyAccBtn.style.color = '#FFFFFF';
-          setTimeout(() => {
-            copyAccBtn.textContent = originalText;
-            copyAccBtn.style.background = '';
-            copyAccBtn.style.color = '';
-          }, 2000);
-        } catch (e) {
-          console.warn('Clipboard write failed:', e);
-        }
+    // Payment Channel Switcher
+    channelButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        channelButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentMethod = btn.dataset.channel;
       });
-    }
+    });
 
     // Donation Form Submission
     if (donationForm) {
       donationForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const firstNameInput = document.getElementById('donor-first-name');
-        const lastNameInput = document.getElementById('donor-last-name');
+        const nameInput = document.getElementById('donor-full-name');
         const emailInput = document.getElementById('donor-email');
         const causeSelect = document.getElementById('donation-cause');
 
         let isValid = true;
 
-        if (!firstNameInput.value.trim()) {
-          firstNameInput.setAttribute('aria-invalid', 'true');
-          document.getElementById('first-name-error').classList.add('show-error');
+        if (!nameInput || !nameInput.value.trim()) {
+          if (nameInput) nameInput.setAttribute('aria-invalid', 'true');
+          const err = document.getElementById('full-name-error');
+          if (err) err.classList.add('show-error');
           isValid = false;
         } else {
-          firstNameInput.removeAttribute('aria-invalid');
-          document.getElementById('first-name-error').classList.remove('show-error');
-        }
-
-        if (!lastNameInput.value.trim()) {
-          lastNameInput.setAttribute('aria-invalid', 'true');
-          document.getElementById('last-name-error').classList.add('show-error');
-          isValid = false;
-        } else {
-          lastNameInput.removeAttribute('aria-invalid');
-          document.getElementById('last-name-error').classList.remove('show-error');
+          nameInput.removeAttribute('aria-invalid');
+          const err = document.getElementById('full-name-error');
+          if (err) err.classList.remove('show-error');
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
-          emailInput.setAttribute('aria-invalid', 'true');
-          document.getElementById('email-error').classList.add('show-error');
+        if (!emailInput || !emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+          if (emailInput) emailInput.setAttribute('aria-invalid', 'true');
+          const err = document.getElementById('email-error');
+          if (err) err.classList.add('show-error');
           isValid = false;
         } else {
           emailInput.removeAttribute('aria-invalid');
-          document.getElementById('email-error').classList.remove('show-error');
+          const err = document.getElementById('email-error');
+          if (err) err.classList.remove('show-error');
         }
 
         if (!isValid) return;
@@ -861,7 +884,7 @@
             <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
             <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
           </svg>
-          <span>Securing Payment & Generating Receipt...</span>
+          <span>Processing Contribution &amp; Generating Receipt...</span>
         `;
 
         setTimeout(() => {
@@ -869,39 +892,55 @@
           submitBtn.innerHTML = originalBtnHTML;
 
           // Populate Receipt Modal
-          const donorFullName = `${firstNameInput.value.trim()} ${lastNameInput.value.trim()}`;
-          const isAnon = document.getElementById('anon-check').checked;
-          document.getElementById('receipt-donor-name').textContent = isAnon ? 'Anonymous Supporter' : donorFullName;
+          const isAnon = document.getElementById('anon-check') && document.getElementById('anon-check').checked;
+          const donorFullName = nameInput.value.trim();
+          const donorEl = document.getElementById('receipt-donor-name');
+          if (donorEl) donorEl.textContent = isAnon ? 'Anonymous Supporter' : donorFullName;
 
           const randomRef = 'FGSCBI-DON-' + new Date().getFullYear() + '-' + Math.floor(10000 + Math.random() * 90000);
-          document.getElementById('receipt-ref').textContent = randomRef;
+          const refEl = document.getElementById('receipt-ref');
+          if (refEl) refEl.textContent = randomRef;
 
-          const formattedMoney = new Intl.NumberFormat('en-PH', { style: 'currency', currency: 'PHP' }).format(currentAmount);
-          document.getElementById('receipt-amount').textContent = formattedMoney + ' PHP';
+          const sym = currentCurrency === 'PHP' ? '₱' : '$';
+          const formattedMoney = `${sym}${currentAmount.toLocaleString('en-US')}.00 ${currentCurrency}`;
+          const amtEl = document.getElementById('receipt-amount');
+          if (amtEl) amtEl.textContent = formattedMoney;
 
-          document.getElementById('receipt-frequency').textContent = currentFreq === 'monthly' ? 'Monthly Partner Pledge' : 'One-Time Contribution';
-          document.getElementById('receipt-designation').textContent = causeSelect ? causeSelect.value : 'Where Most Needed';
+          const freqEl = document.getElementById('receipt-frequency');
+          if (freqEl) freqEl.textContent = currentFreq === 'monthly' ? 'Monthly Sustainer Pledge' : 'One-Time Contribution';
+
+          const desEl = document.getElementById('receipt-designation');
+          if (desEl) desEl.textContent = causeSelect ? causeSelect.value : 'Priority Need (Where funds are needed most)';
 
           const methodNames = {
-            gcash: 'GCash / Maya (QR Ph)',
-            card: 'Credit / Debit Card (Visa/MC)',
-            bank: 'Land Bank of the Philippines (LBP)'
+            gcash: 'GCash Instant Transfer',
+            maya: 'Maya Philippines',
+            card: 'Credit / Debit Card (Visa/Mastercard)',
+            bank: 'Bank Transfer (BDO / Landbank)',
+            qrph: 'QR-Ph National Standard',
+            paypal: 'PayPal International'
           };
-          document.getElementById('receipt-method').textContent = methodNames[currentMethod] || 'Secure Payment Gateway';
+          const methEl = document.getElementById('receipt-method');
+          if (methEl) methEl.textContent = methodNames[currentMethod] || 'Secure Online Gateway';
 
           const now = new Date();
-          document.getElementById('receipt-date').textContent = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' });
-          document.getElementById('receipt-email').textContent = emailInput.value.trim();
+          const dateEl = document.getElementById('receipt-date');
+          if (dateEl) dateEl.textContent = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+          const emailEl = document.getElementById('receipt-email');
+          if (emailEl) emailEl.textContent = emailInput.value.trim();
 
           // Show Modal
-          receiptModal.classList.add('is-active');
-          document.body.style.overflow = 'hidden';
+          if (receiptModal) {
+            receiptModal.classList.add('is-active');
+            document.body.style.overflow = 'hidden';
+          }
         }, 1100);
       });
     }
 
     // Close Receipt Modal
-    if (closeReceiptBtn) {
+    if (closeReceiptBtn && receiptModal) {
       closeReceiptBtn.addEventListener('click', () => {
         receiptModal.classList.remove('is-active');
         document.body.style.overflow = '';

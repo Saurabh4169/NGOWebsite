@@ -1757,6 +1757,42 @@ li {
   transition: all var(--transition-fast);
 }
 
+.pillar-thumb-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md, 10px);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: #071726;
+  box-shadow: 0 4px 14px rgba(11, 27, 43, 0.08);
+}
+
+.pillar-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal, 0.3s ease);
+}
+
+.pillar-card:hover .pillar-thumb-img {
+  transform: scale(1.05);
+}
+
+.pillar-thumb-badge {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
+
 .pillar-card:hover .pillar-icon-box {
   background: linear-gradient(135deg, #059669 0%, #10B981 100%);
   color: #FFFFFF;
@@ -2054,6 +2090,22 @@ li {
   font-size: 2.2rem;
   border: 3px solid #FFFFFF;
   box-shadow: 0 4px 14px rgba(3, 70, 135, 0.12);
+}
+
+.team-avatar-img {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  margin: 0 auto var(--space-md);
+  border: 3.5px solid #FFFFFF;
+  box-shadow: 0 6px 18px rgba(3, 70, 135, 0.15), 0 2px 6px rgba(16, 185, 129, 0.12);
+  display: block;
+  transition: transform var(--transition-normal, 0.25s ease);
+}
+
+.team-card:hover .team-avatar-img {
+  transform: scale(1.05);
 }
 
 /* ==========================================================================
@@ -4250,5 +4302,355 @@ li {
   border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
   color: #FFFFFF;
+}
+
+/* ==========================================================================
+   Donate Reference UI Components (Matches Reference Design 1:1)
+   ========================================================================== */
+.donate-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem 2rem;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 9999px;
+  padding: 0.65rem 1.75rem;
+  max-width: 860px;
+  margin: 1.75rem auto 0;
+  box-shadow: 0 4px 16px rgba(11, 27, 43, 0.04);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.donate-trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.donate-trust-item svg {
+  color: #10B981;
+  flex-shrink: 0;
+}
+
+/* Frequency & Currency Row */
+.donate-switch-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.freq-switch-pills {
+  display: inline-flex;
+  background: #F1F5F9;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  border: 1px solid #E2E8F0;
+}
+
+.freq-pill-btn {
+  padding: 0.45rem 1.15rem;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748B;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.freq-pill-btn.active {
+  background: #0B1B2B;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(11, 27, 43, 0.15);
+}
+
+.freq-pill-btn.active-monthly {
+  background: #047857;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(4, 120, 87, 0.25);
+}
+
+.badge-popular {
+  background: #10B981;
+  color: #FFFFFF;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.currency-switch-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748B;
+}
+
+.currency-toggle-btn {
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.currency-toggle-btn.active {
+  background: #0EA5E9;
+  color: #FFFFFF;
+  border-color: #0EA5E9;
+}
+
+/* Impact Tier 2x2 Cards Grid */
+.impact-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 580px) {
+  .impact-tier-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.impact-tier-card {
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 1.15rem 1.1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-tier-card:hover {
+  border-color: #10B981;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.1);
+  transform: translateY(-2px);
+}
+
+.impact-tier-card.active {
+  border-color: #10B981;
+  background: #F0FDF4;
+  box-shadow: 0 0 0 1px #10B981, 0 6px 18px rgba(16, 185, 129, 0.14);
+}
+
+.tier-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.tier-amount {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #0B1B2B;
+}
+
+.impact-tier-card.active .tier-amount {
+  color: #047857;
+}
+
+.tier-check-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #CBD5E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  font-size: 0.75rem;
+}
+
+.impact-tier-card.active .tier-check-icon {
+  background: #10B981;
+  border-color: #10B981;
+  color: #FFFFFF;
+}
+
+.tier-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0B1B2B;
+  margin-bottom: 0.25rem;
+}
+
+.tier-desc {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  color: #64748B;
+  line-height: 1.45;
+}
+
+/* Payment Channels Grid (6 Channels) */
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .channels-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.channel-btn {
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 0.65rem 0.35rem;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.channel-btn:hover {
+  border-color: #10B981;
+  color: #0B1B2B;
+}
+
+.channel-btn.active {
+  border-color: #10B981;
+  background: #ECFDF5;
+  color: #047857;
+  box-shadow: 0 0 0 1px #10B981;
+}
+
+.channel-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Sidebar Impact Widgets */
+.sidebar-impact-box {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 1.5rem 1.35rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 16px rgba(11, 27, 43, 0.04);
+}
+
+.box-top-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #64748B;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.badge-live-tracker {
+  background: #ECFDF5;
+  color: #059669;
+  border: 1px solid #A7F3D0;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+}
+
+.tracker-amount {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #0B1B2B;
+  line-height: 1;
+}
+
+.tracker-goal {
+  font-size: 0.78rem;
+  color: #64748B;
+  margin-left: 0.35rem;
+}
+
+.tracker-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  border-top: 1px solid #F1F5F9;
+  padding-top: 0.85rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.tracker-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0B1B2B;
+}
+
+.tracker-stat-label {
+  font-size: 0.66rem;
+  color: #64748B;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Corporate Banner */
+.corporate-sponsor-card {
+  background: linear-gradient(135deg, #071726 0%, #0B1B2B 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  color: #FFFFFF;
+  margin-top: 3.5rem;
+  box-shadow: 0 16px 36px rgba(11, 27, 43, 0.12);
+}
+
+.corporate-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .corporate-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
