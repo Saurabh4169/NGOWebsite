@@ -935,25 +935,26 @@ li {
 /* Ken Burns slow zoom */
 @keyframes kenBurnsSlow {
   0% {
-    transform: scale(1.04);
+    transform: scale(1.0);
   }
   100% {
-    transform: scale(1.10);
+    transform: scale(1.03);
   }
 }
 
 .hero-bg-photo {
   position: absolute;
-  inset: -5%;
+  inset: 0;
   background-size: cover;
-  background-position: 72% center;
+  background-position: 65% center;
   background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
   will-change: transform;
 }
 
 .hero-ken-burns {
-  animation: kenBurnsSlow 18s ease-in-out infinite alternate;
-  transform-origin: 75% 45%;
+  animation: kenBurnsSlow 20s ease-in-out infinite alternate;
+  transform-origin: 65% 45%;
 }
 
 /* Left-to-right gradient fade (text contrast while right side stays clean) */
