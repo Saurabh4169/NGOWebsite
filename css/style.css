@@ -875,6 +875,37 @@ li {
   }
 }
 
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 0.85rem;
+  }
+
+  .logo-white-box {
+    padding: 0.35rem 0.65rem;
+    gap: 6px;
+  }
+
+  .logo-box-name {
+    font-size: 0.85rem;
+  }
+
+  .header-actions {
+    gap: 0.45rem;
+  }
+
+  .header-actions .nav-btn-gradient {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-actions .nav-btn-gradient {
+    display: none;
+  }
+}
+
 /* ==========================================================================
    Hero Section: Full-screen Sports Academy Reference Layout
    ========================================================================== */
@@ -1306,41 +1337,46 @@ li {
 
 @media (max-width: 768px) {
   .hero-premium-section {
-    min-height: calc(75vh - 57px);
-    min-height: calc(75svh - 57px);
-    padding-top: 1.5rem;
+    min-height: max(520px, calc(75vh - 57px));
+    min-height: max(520px, calc(75svh - 57px));
+    padding-top: 1.75rem;
     padding-bottom: 1.25rem;
   }
 
   .hero-content-block {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    max-width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .hero-display-title {
-    font-size: clamp(34px, 8.5vw, 44px);
+    font-size: clamp(32px, 8vw, 44px);
     line-height: 1.08;
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
   }
 
   .hero-lead-text {
-    font-size: 16px;
-    line-height: 1.55;
-    margin-bottom: 1.5rem;
+    font-size: clamp(15px, 3.8vw, 17px);
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    max-width: 100%;
   }
 
   .hero-cta-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.75rem;
+    width: 100%;
   }
 
   .btn-hero-primary-gradient,
   .btn-hero-solid-white {
-    width: 100%;
+    padding: 0.75rem 1.6rem;
+    font-size: 0.95rem;
     text-align: center;
-    padding: 0.8rem 1.5rem;
+    justify-content: center;
+    flex: 1 1 200px;
   }
 
   .hero-feature-bar {
@@ -1349,7 +1385,7 @@ li {
   }
 
   .feature-col-item {
-    padding: 0.9rem 0.85rem;
+    padding: 0.85rem 0.75rem;
     gap: 8px;
   }
 
@@ -1365,12 +1401,91 @@ li {
 
   .feature-col-label {
     font-size: 0.72rem;
+    letter-spacing: 0.03em;
   }
 
   .hero-scroll-prompt {
     align-self: center;
     margin-right: 0;
     margin-top: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-premium-section {
+    min-height: max(480px, calc(75vh - 57px));
+    min-height: max(480px, calc(75svh - 57px));
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-display-title {
+    font-size: clamp(28px, 9vw, 36px);
+    line-height: 1.1;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-hero-primary-gradient,
+  .btn-hero-solid-white {
+    width: 100%;
+    flex: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-feature-bar {
+    border-radius: 12px;
+  }
+
+  .feature-col-item {
+    padding: 0.75rem 0.5rem;
+    gap: 6px;
+  }
+
+  .feature-icon-box {
+    width: 26px;
+    height: 26px;
+  }
+
+  .feature-svg-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .feature-col-label {
+    font-size: 0.67rem;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+
+  .hero-scroll-prompt {
+    font-size: 0.65rem;
+    margin-top: 0.2rem;
+  }
+
+  .stats-bar {
+    margin-top: -1.5rem;
+    padding: 1.15rem 0.75rem;
+  }
+
+  .stats-grid {
+    gap: 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+  }
+
+  .stat-desc {
+    font-size: 0.7rem;
   }
 }
 
@@ -1824,6 +1939,12 @@ li {
   padding: var(--space-3xl) 0 var(--space-2xl);
   background-color: var(--color-bg);
   border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: var(--space-xl) 0 var(--space-lg);
+  }
 }
 
 .facts-table-card {
@@ -3398,16 +3519,23 @@ li {
 }
 
 @media (max-width: 640px) {
+  .donate-hero {
+    padding: 3rem 0 2rem;
+  }
+
   .donate-form-card {
     padding: 1.5rem 1.15rem;
+    border-radius: 16px;
   }
 
   .amount-btn-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
   }
 
   .payment-tabs-nav {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
   .qr-ph-box {
