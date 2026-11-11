@@ -143,170 +143,173 @@
       </div>
     </section>
 
-    <!-- Program Cards Detailed Section -->
+    <!-- Program Cards Detailed Section (Matches Client Specification Reference Grid) -->
     <section class="section" aria-label="Detailed Programs List">
       <div class="container">
         
-        <!-- Program 1: Youth Anti-Drug Abuse Resistance Education -->
-        <article id="youth-anti-drug" class="card mb-xl fade-in-up" style="margin-bottom: var(--space-2xl);">
-          <div class="grid-2" style="align-items: stretch;">
-            <div class="card-img-wrapper" style="aspect-ratio: auto; min-height: 280px;">
-              <span class="badge badge-gold card-badge-pos">National Youth Commission</span>
-              <img src="assets/images/cert-nyc-idare-2021.jpg" alt="Official Certificate of Participation from National Youth Commission for I DARE Youth project" class="card-img" style="height: 100%; object-fit: contain; background-color: #07192C; padding: 1rem;" width="640" height="420" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body" style="padding: var(--space-xl);">
-              <span class="card-partner">
-                <strong>Partner:</strong> National Youth Commission (NYC), Office of the President
-              </span>
-              <h2 class="card-title" style="font-size: 1.5rem;">1. Youth Anti-Drug Abuse Resistance Education</h2>
-              <p class="card-text">
-                In November 2021, Friendship Goals Society Caraga-Butuan Inc. formally participated in the nationwide <strong>"Search for Outstanding Illegal Drug Abuse Resistance Education Projects for the Youth" (I DARE Youth)</strong>, conducted by the National Youth Commission (NYC), Office of the President.
-              </p>
-              <p class="card-text">
-                The program focuses on preventive drug resistance education, peer guidance, character-building, and positive civic activities designed to guide Butuan youth toward healthy lifestyles, productive leadership, and constructive community contributions.
-              </p>
-              <div class="card-footer" style="margin-top: auto; padding-top: var(--space-md);">
-                <span><strong>Milestone:</strong> Manila, Philippines (24 November 2021)</span>
-                <span class="badge badge-teal">Youth Leadership</span>
-              </div>
-            </div>
-          </div>
-        </article>
+        <!-- Interactive Filter Tabs (Matches Reference UI) -->
+        <div class="program-filter-bar" role="tablist" aria-label="Filter initiatives by focus area">
+          <button class="program-filter-pill active" data-filter="all" role="tab" aria-selected="true">All Initiatives (6)</button>
+          <button class="program-filter-pill" data-filter="youth" role="tab" aria-selected="false">Youth Leadership</button>
+          <button class="program-filter-pill" data-filter="environmental" role="tab" aria-selected="false">Environmental &amp; Coastal</button>
+          <button class="program-filter-pill" data-filter="livelihood" role="tab" aria-selected="false">Livelihood &amp; Skills</button>
+          <button class="program-filter-pill" data-filter="governance" role="tab" aria-selected="false">Civic Governance</button>
+        </div>
 
-        <!-- Program 2: Environmental and Coastal Clean-ups -->
-        <!-- Official coastal clean-up photo -->
-        <article id="coastal-cleanup" class="card mb-xl fade-in-up" style="margin-bottom: var(--space-2xl);">
-          <div class="grid-2" style="align-items: stretch;">
-            <div class="card-img-wrapper" style="aspect-ratio: auto; min-height: 280px;">
-              <span class="badge badge-teal card-badge-pos">Coastal &amp; Marine Care</span>
-              <img src="assets/images/hero-cleanup.jpg" alt="Community volunteers and families in blue shirts holding collection bags for environmental care" class="card-img" style="height: 100%; object-fit: cover;" width="640" height="420" loading="lazy" decoding="async">
+        <!-- 6-Card Grid (Matches Reference UI 3x2 Grid) -->
+        <div class="programs-reference-grid" id="programsGrid">
+          
+          <!-- Card 1: Youth Anti-Drug Abuse Resistance Education -->
+          <article id="youth-anti-drug" class="program-ref-card fade-in-up" data-category="youth">
+            <div class="program-card-topbar">
+              <span class="program-tag-pill tag-cyan">POSITIVE ADDICTION</span>
+              <span class="program-partner-label">NYC / Office of the Pres.</span>
             </div>
-            <div class="card-body" style="padding: var(--space-xl);">
-              <span class="card-partner">
-                <strong>Partner:</strong> Community Barangays, Local Fisherfolk &amp; Volunteers
-              </span>
-              <h2 class="card-title" style="font-size: 1.5rem;">2. Environmental &amp; Coastal Clean-ups</h2>
-              <p class="card-text">
-                Caraga is defined by its rich marine biodiversity, coastlines, and river networks. FGSCBI mobilizes youth, coastal neighborhood residents, and artisanal fisherfolk for regular shoreline sanitation, plastic recovery drives, and eco-stewardship education.
+            <div class="program-card-thumb contain-thumb">
+              <img src="assets/images/cert-nyc-idare-2021.jpg" alt="Official Certificate of Participation from National Youth Commission for I DARE Youth project" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <h2 class="program-card-heading">1. Youth Anti-Drug Abuse Resistance Education</h2>
+              <div class="program-card-partner-sub">Partner: National Youth Commission (NYC), Office of the President</div>
+              <p class="program-card-paragraph">
+                Formally recognized in the nationwide "Search for Outstanding Illegal Drug Abuse Resistance Education Projects for the Youth" (I DARE Youth), providing proactive preventive education, peer guidance, character-building, and positive civic activities.
               </p>
-              <p class="card-text">
-                Our clean-up drives target sensitive marine habitats and riverbanks around Butuan Bay, fostering community ownership over environmental protection and emphasizing that clean coasts sustain healthy fishing livelihoods.
-              </p>
-              <div class="card-footer" style="margin-top: auto; padding-top: var(--space-md);">
-                <span><strong>Status:</strong> Ongoing Volunteer Drives</span>
-                <a href="contact.html#ways-to-help" class="btn btn-outline btn-sm">Join as Volunteer</a>
+              <div class="program-card-bottom">
+                <div class="program-card-meta-row">
+                  <span class="program-meta-title">Milestone:</span>
+                  <span class="program-meta-data">Manila, 24 Nov 2021</span>
+                </div>
+                <a href="recognitions.html#cert-nyc" class="btn-card-outline-action">VIEW MILESTONE DETAILS</a>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Program 3: Community Livelihood: Soap Making and Marketing -->
-        <article id="livelihood-soap" class="card mb-xl fade-in-up" style="margin-bottom: var(--space-2xl);">
-          <div class="grid-2" style="align-items: stretch;">
-            <div class="card-img-wrapper" style="aspect-ratio: auto; min-height: 280px;">
-              <span class="badge badge-blue card-badge-pos">DOLE-Assisted Livelihood</span>
-              <!-- Privacy Note: Shows hands-on skills training without disclosing individual beneficiary name or grant amount -->
-              <img src="assets/images/livelihood-soap-making-workshop.jpg" alt="Hands-on soap making and compounding workshop in Brgy. J.P. Rizal" class="card-img" style="height: 100%; object-fit: cover;" width="640" height="420" loading="lazy" decoding="async">
+          <!-- Card 2: Environmental & Coastal Clean-ups -->
+          <article id="coastal-cleanup" class="program-ref-card fade-in-up" data-category="environmental">
+            <div class="program-card-topbar">
+              <span class="program-tag-pill tag-teal">COASTAL &amp; MARINE CARE</span>
+              <span class="program-partner-label">• Routine Drives</span>
             </div>
-            <div class="card-body" style="padding: var(--space-xl);">
-              <span class="card-partner">
-                <strong>Partner:</strong> DOLE Regional Office Caraga (DILP) &amp; Butuan City PESO
-              </span>
-              <h2 class="card-title" style="font-size: 1.5rem;">3. Community Livelihood: Soap Making &amp; Marketing</h2>
-              <p class="card-text">
-                A community livelihood training initiative assisted by the Department of Labor and Employment (DOLE) Regional Office Caraga through the DOLE Integrated Livelihood Program (DILP), in coordination with the Butuan City Public Employment Service Office (PESO).
+            <div class="program-card-thumb">
+              <img src="assets/images/hero-cleanup.jpg" alt="Community volunteers and families in blue shirts holding collection bags for environmental care" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <h2 class="program-card-heading">2. Environmental &amp; Coastal Clean-ups</h2>
+              <div class="program-card-partner-sub">Partner: Community Barangays, Local Fisherfolk &amp; Volunteers</div>
+              <p class="program-card-paragraph">
+                Mobilizing Caraga youth, coastal neighborhood residents, and artisanal fisherfolk for regular shoreline sanitation, plastic pollution interception, and mangrove habitat stewardship across Butuan Bay.
               </p>
-              <p class="card-text">
-                Launched on May 1, 2025, in <strong>Brgy. J.P. Rizal, Butuan City</strong>, the project provides community members with practical vocational skills in formulating high-quality household and personal hygiene soaps, product packaging, and local micro-enterprise marketing to help augment sustainable family income.
-              </p>
-              <div class="card-footer" style="margin-top: auto; padding-top: var(--space-md);">
-                <span><strong>Started:</strong> May 1, 2025 • Brgy. J.P. Rizal, Butuan City</span>
-                <span class="badge badge-gold">Micro-Enterprise</span>
+              <div class="program-card-bottom">
+                <div class="program-card-meta-row">
+                  <span class="program-meta-title">Cadence:</span>
+                  <span class="program-meta-data">Ongoing Volunteer Drives</span>
+                </div>
+                <a href="contact.html#ways-to-help" class="btn-card-solid-action">JOIN AS VOLUNTEER</a>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Program 4: Human Rights Go Digital Regional Workshop -->
-        <article id="human-rights-digital" class="card mb-xl fade-in-up" style="margin-bottom: var(--space-2xl);">
-          <div class="grid-2" style="align-items: stretch;">
-            <div class="card-img-wrapper" style="aspect-ratio: auto; min-height: 280px;">
-              <span class="badge badge-teal card-badge-pos">CSO Digital Capacity</span>
-              <img src="assets/images/human-rights-go-digital-2025.jpg" alt="Participants at the Human Rights Go Digital Regional Advocacy Workshop in Butuan City" class="card-img" style="height: 100%; object-fit: cover;" width="640" height="420" loading="lazy" decoding="async">
+          <!-- Card 3: Community Livelihood: Soap Making & Marketing -->
+          <article id="livelihood-soap" class="program-ref-card fade-in-up" data-category="livelihood">
+            <div class="program-card-topbar">
+              <span class="program-tag-pill tag-amber">MICRO-ENTERPRISE</span>
+              <span class="program-partner-label">DOLE Caraga &amp; PESO</span>
             </div>
-            <div class="card-body" style="padding: var(--space-xl);">
-              <span class="card-partner">
-                <strong>Partner:</strong> Commission on Human Rights (CHR) &amp; Friedrich Naumann Foundation
-              </span>
-              <h2 class="card-title" style="font-size: 1.5rem;">4. Human Rights Go Digital: Regional CSO Advocacy</h2>
-              <p class="card-text">
-                In July 2025, FGSCBI participated in the <strong>"Human Rights Go Digital: Regional Digital Advocacy Workshop for Civil Society Organizations (CSOs)"</strong> held in Butuan City, co-organized by the Commission on Human Rights (CHR) and the Friedrich Naumann Foundation (FNF) Philippines.
+            <div class="program-card-thumb">
+              <img src="assets/images/livelihood-soap-making-workshop.jpg" alt="Hands-on soap making and compounding workshop in Brgy. J.P. Rizal" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <h2 class="program-card-heading">3. Community Livelihood: Soap Making &amp; Marketing</h2>
+              <div class="program-card-partner-sub">Partner: DOLE Regional Office Caraga (DILP) &amp; Butuan PESO</div>
+              <p class="program-card-paragraph">
+                Assisted by the Department of Labor and Employment Integrated Livelihood Program (DILP), delivering hands-on training in formulating household soaps, product packaging, and local micro-enterprise marketing.
               </p>
-              <p class="card-text">
-                The training strengthened regional civil society advocates in digital campaigning, rights-based communication, online safety, and ethical storytelling, enabling CSOs to effectively champion human dignity and grassroots concerns in online spaces.
-              </p>
-              <div class="card-footer" style="margin-top: auto; padding-top: var(--space-md);">
-                <span><strong>Conducted:</strong> July 2025 • Butuan City</span>
-                <span class="badge badge-teal">Advocacy &amp; Rights</span>
+              <div class="program-card-bottom">
+                <div class="program-card-meta-row">
+                  <span class="program-meta-title">Started:</span>
+                  <span class="program-meta-data">May 1, 2025 • Butuan</span>
+                </div>
+                <a href="contact.html#ways-to-help" class="btn-card-outline-action">EXPLORE PROJECT</a>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Program 5: Regional Development Council Representation -->
-        <article id="rdc-participation" class="card mb-xl fade-in-up" style="margin-bottom: var(--space-2xl);">
-          <div class="grid-2" style="align-items: stretch;">
-            <div class="card-img-wrapper" style="aspect-ratio: auto; min-height: 280px;">
-              <span class="badge badge-gold card-badge-pos">Regional Policy &amp; Planning</span>
-              <img src="assets/images/rdc-stage-ceremony.jpg" alt="FGSCBI representative honored on stage at RDC Full Council Meeting" class="card-img" style="height: 100%; object-fit: cover;" width="640" height="420" loading="lazy" decoding="async">
+          <!-- Card 4: Human Rights Go Digital: Regional CSO Advocacy -->
+          <article id="human-rights-digital" class="program-ref-card fade-in-up" data-category="governance">
+            <div class="program-card-topbar">
+              <span class="program-tag-pill tag-blue">ADVOCACY &amp; RIGHTS</span>
+              <span class="program-partner-label">CHR &amp; FNF</span>
             </div>
-            <div class="card-body" style="padding: var(--space-xl);">
-              <span class="card-partner">
-                <strong>Partner:</strong> Caraga Regional Development Council (RDC) &amp; NEDA Caraga
-              </span>
-              <h2 class="card-title" style="font-size: 1.5rem;">5. Regional Development Council (RDC) Caraga Participation</h2>
-              <p class="card-text">
-                FGSCBI serves as the accredited <strong>Private Sector Representative (PSR) for the Fishery Sector</strong> in RDC Caraga. Our leadership actively attended the <strong>122nd (Second Quarter 2025) Full Council Meeting</strong> and sectoral deliberations in Butuan City.
+            <div class="program-card-thumb">
+              <img src="assets/images/human-rights-go-digital-2025.jpg" alt="Participants at the Human Rights Go Digital Regional Advocacy Workshop in Butuan City" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <h2 class="program-card-heading">4. Human Rights Go Digital: Regional CSO Advocacy</h2>
+              <div class="program-card-partner-sub">Partner: CHR &amp; Friedrich Naumann Foundation (FNF)</div>
+              <p class="program-card-paragraph">
+                Capacity building for civil society advocates on digital campaigning, rights-based public communication, digital safety protocols, and ethical advocacy across regional online platforms.
               </p>
-              <p class="card-text">
-                By presenting empirical grassroots insights on coastal resources, post-harvest facilities, and artisanal fishing welfare, FGSCBI ensures that regional development investments directly address coastal poverty alleviation and marine conservation.
-              </p>
-              <div class="card-footer" style="margin-top: auto; padding-top: var(--space-md);">
-                <span><strong>Role:</strong> Fishery Sector PSR • 122nd Council Meeting (July 2025)</span>
-                <a href="recognitions.html#plaque-rdc" class="btn btn-outline btn-sm">View Plaque</a>
+              <div class="program-card-bottom">
+                <div class="program-card-meta-row">
+                  <span class="program-meta-title">Conducted:</span>
+                  <span class="program-meta-data">July 28–29, 2025 • Butuan City</span>
+                </div>
+                <a href="news.html" class="btn-card-outline-action">READ HIGHLIGHTS</a>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Program 6: Social Protection Research & 4Ps Assessment -->
-        <article id="social-protection-research" class="card mb-xl fade-in-up" style="margin-bottom: var(--space-2xl);">
-          <div class="grid-2" style="align-items: stretch;">
-            <div class="card-img-wrapper" style="aspect-ratio: auto; min-height: 280px;">
-              <span class="badge badge-blue card-badge-pos">Social Research Consultation</span>
-              <img src="assets/images/cert-braintrust-4ps-study.jpg" alt="Certificate of Participation for Focus Group Discussion on 4Ps Assessment Study" class="card-img" style="height: 100%; object-fit: contain; background-color: #07192C; padding: 1rem;" width="640" height="420" loading="lazy" decoding="async">
+          <!-- Card 5: Regional Development Council Participation -->
+          <article id="rdc-participation" class="program-ref-card fade-in-up" data-category="governance">
+            <div class="program-card-topbar">
+              <span class="program-tag-pill tag-purple">CIVIC GOVERNANCE</span>
+              <span class="program-partner-label">RDC &amp; NEDA Caraga</span>
             </div>
-            <div class="card-body" style="padding: var(--space-xl);">
-              <span class="card-partner">
-                <strong>Partner:</strong> Brain Trust Inc. / Department of Social Welfare and Development (DSWD)
-              </span>
-              <h2 class="card-title" style="font-size: 1.5rem;">6. Social Protection Research Participation (4Ps Assessment)</h2>
-              <p class="card-text">
-                FGSCBI participated as a civil society stakeholder in a Focus Group Discussion (FGD) for the national assessment study entitled <em>"Assessment of Pantawid Pamilyang Pilipino Program (4Ps) and Other Existing Social Protection Programs in the Philippines and their Contribution to Poverty Alleviation"</em>, conducted by Brain Trust Inc. on behalf of DSWD.
+            <div class="program-card-thumb">
+              <img src="assets/images/rdc-plaque-awarding-group.jpg" alt="Outgoing RDC Officials and PSRs with Plaques of Appreciation on stage" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <h2 class="program-card-heading">5. Regional Development Council (RDC) Participation</h2>
+              <div class="program-card-partner-sub">Partner: Caraga RDC &amp; NEDA Regional Office</div>
+              <p class="program-card-paragraph">
+                Serving as the accredited Private Sector Representative (PSR) for the Fishery Sector. Delivering empirical grassroots insights on post-harvest facilities, fuel subsidies, and coastal zoning in RDC Full Council sessions.
               </p>
-              <p class="card-text">
-                FGSCBI contributed firsthand perspectives regarding social protection coverage, delivery gaps in coastal fishing villages, and pathways to sustainable community graduation from assistance.
-              </p>
-              <p style="font-size: 0.8rem; color: var(--color-text-muted); font-style: italic;">
-                Note: Described as participation only. Displayed certificate has a blank recipient line in the uploaded copy and is subject to client verification.
-              </p>
-              <div class="card-footer" style="margin-top: auto; padding-top: var(--space-md);">
-                <span><strong>Role:</strong> Civil Society Consultation Stakeholder</span>
-                <span class="badge badge-teal">Social Research</span>
+              <div class="program-card-bottom">
+                <div class="program-card-meta-row">
+                  <span class="program-meta-title">Mandate:</span>
+                  <span class="program-meta-data">122nd Council Session</span>
+                </div>
+                <a href="recognitions.html#plaque-rdc" class="btn-card-outline-action">VIEW COUNCIL BRIEFING</a>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
+
+          <!-- Card 6: Artisanal Fisherfolk Welfare & Sanctuary Defense -->
+          <article id="fisherfolk-sanctuary" class="program-ref-card fade-in-up" data-category="environmental">
+            <div class="program-card-topbar">
+              <span class="program-tag-pill tag-cyan">MARINE STEWARDSHIP</span>
+              <span class="program-partner-label">BFAR Caraga</span>
+            </div>
+            <div class="program-card-thumb">
+              <img src="assets/images/coastal-cleanup-community.jpg" alt="Coastal community and fisherfolk along Caraga shoreline" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <h2 class="program-card-heading">6. Artisanal Fisherfolk Welfare &amp; Sanctuary Defense</h2>
+              <div class="program-card-partner-sub">Partner: BFAR Caraga &amp; Coastal Fisherfolk Alliances</div>
+              <p class="program-card-paragraph">
+                Safeguarding artisanal fishing grounds against illegal maritime encroachment, distributing ecological fishing gear, and establishing community-level marine conservation monitoring in Butuan Bay.
+              </p>
+              <div class="program-card-bottom">
+                <div class="program-card-meta-row">
+                  <span class="program-meta-title">Coverage:</span>
+                  <span class="program-meta-data">Caraga Municipal Waters</span>
+                </div>
+                <a href="donate.html" class="btn-card-solid-action">SUPPORT INITIATIVE</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
 
       </div>
     </section>
@@ -407,6 +410,33 @@
 
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterPills = document.querySelectorAll('.program-filter-pill');
+      const cards = document.querySelectorAll('.program-ref-card');
+
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('active');
+            p.setAttribute('aria-selected', 'false');
+          });
+          pill.classList.add('active');
+          pill.setAttribute('aria-selected', 'true');
+
+          const filter = pill.dataset.filter;
+          cards.forEach(card => {
+            const cat = card.dataset.category || '';
+            if (filter === 'all' || cat === filter || cat.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
 
