@@ -242,18 +242,6 @@ export default function AboutPage() {
                 <span style={{ fontSize: '0.85rem', color: '#0EA5E9', fontWeight: 700 }}>📍 Butuan City, Caraga Region</span>
               </div>
             </div>
-
-            <div className="about-fact-card" style={{ background: '#0B1B2B', color: '#FFFFFF', borderColor: '#0B1B2B' }}>
-              <div>
-                <span className="about-fact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Direct Hotline</span>
-                <h3 className="about-fact-value" style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>
-                  <a href="tel:+639099873083" style={{ color: '#38BDF8', textDecoration: 'none' }}>+63 909 987 3083</a>
-                </h3>
-                <p className="about-fact-sub" style={{ color: 'rgba(255,255,255,0.8)' }}>
-                  Email: <a href="mailto:contact@fgscbi.org" style={{ color: '#34D399' }}>contact@fgscbi.org</a>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
