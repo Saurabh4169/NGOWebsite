@@ -65,7 +65,8 @@
   }
 
   /**
-   * 2. STICKY HEADER SCROLL SHRINK
+   * 2. STICKY FROSTED HEADER SCROLL HANDLER
+   * Toggles 'scrolled' class when page scrolls beyond 40px
    */
   function initHeaderScroll() {
     const header = document.querySelector('.site-header');
@@ -73,8 +74,10 @@
 
     function handleScroll() {
       if (window.scrollY > 40) {
+        header.classList.add('scrolled');
         header.classList.add('is-scrolled');
       } else {
+        header.classList.remove('scrolled');
         header.classList.remove('is-scrolled');
       }
     }

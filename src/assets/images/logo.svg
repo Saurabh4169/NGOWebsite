@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120" fill="none" role="img" aria-label="Friendship Goals Society Caraga-Butuan Inc. Logo">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3B60"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Emblem Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield/Circle -->
+    <circle cx="50" cy="50" r="46" fill="url(#blueGrad)" filter="url(#shadow)" stroke="#F59E0B" stroke-width="2.5"/>
+    <circle cx="50" cy="50" r="41" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+
+    <!-- Rising Sun / Civic Hope rays -->
+    <path d="M50 20 L50 28 M30 28 L36 34 M70 28 L64 34 M22 46 L30 48 M78 46 L70 48" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="50" cy="46" r="14" fill="url(#goldGrad)"/>
+
+    <!-- Dynamic Waves (Coastal & Fishery Sector) -->
+    <path d="M18 64 C 28 58, 38 70, 50 64 C 62 58, 72 70, 82 64 L82 86 C 72 90, 62 82, 50 86 C 38 82, 28 90, 18 86 Z" fill="url(#tealGrad)" opacity="0.95"/>
+    <path d="M14 74 C 26 68, 38 80, 50 74 C 62 68, 74 80, 86 74 L86 88 C 74 94, 62 86, 50 90 C 38 86, 26 94, 14 88 Z" fill="#0B3B60" opacity="0.85"/>
+
+    <!-- Helping Hands / Friendship Heart Motif -->
+    <path d="M42 46 C42 41, 46 39, 50 43 C54 39, 58 41, 58 46 C58 52, 50 56, 50 56 C50 56, 42 52, 42 46 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(125, 26)">
+    <!-- Acronym with Gold Accent -->
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" letter-spacing="1.5" fill="var(--color-text-brand, #0B3B60)">FGSCBI</text>
+    <rect x="110" y="8" width="6" height="18" rx="3" fill="#D97706"/>
+    <text x="124" y="22" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#0D9488" text-transform="uppercase">Caraga Region</text>
+
+    <!-- Full Legal Name -->
+    <text x="0" y="47" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" fill="var(--color-text-heading, #1E293B)" letter-spacing="0.2">Friendship Goals Society Caraga-Butuan Inc.</text>
+
+    <!-- Subtitle / Mission Tagline -->
+    <text x="0" y="66" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="var(--color-text-muted, #64748B)" letter-spacing="0.3">Social Services &amp; Community Development • Butuan City, Philippines</text>
+  </g>
+</svg>
+

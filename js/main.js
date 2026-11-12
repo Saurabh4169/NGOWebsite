@@ -65,7 +65,29 @@
   }
 
   /**
-   * 2. MOBILE NAVIGATION DRAWER
+   * 2. STICKY FROSTED HEADER SCROLL HANDLER
+   * Toggles 'scrolled' class when page scrolls beyond 40px
+   */
+  function initHeaderScroll() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+
+    function handleScroll() {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('scrolled');
+        header.classList.remove('is-scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+  }
+
+  /**
+   * 3. MOBILE NAVIGATION DRAWER
    */
   function initMobileNav() {
     const navToggle = document.getElementById('mobile-nav-toggle');
@@ -731,6 +753,7 @@
    */
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
+    initHeaderScroll();
     initMobileNav();
     initScrollReveal();
     initLightbox();
