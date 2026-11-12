@@ -2726,17 +2726,21 @@ li {
 }
 
 /* Ways to Help Cards (Glossy Glass Cards with Equal Height) */
+#ways-to-help .grid-3 {
+  gap: 1.5rem;
+}
+
 .help-card {
   background: var(--gradient-gloss-card);
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: var(--radius-lg);
-  padding: 2.25rem 2rem;
+  border-radius: 18px;
+  padding: 1.5rem 1.4rem;
   box-shadow: 
     inset 0 1px 1px rgba(255, 255, 255, 0.95),
-    0 12px 32px -6px rgba(3, 70, 135, 0.08),
-    0 4px 12px rgba(5, 150, 105, 0.05);
+    0 10px 28px -6px rgba(3, 70, 135, 0.07),
+    0 4px 12px rgba(5, 150, 105, 0.04);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -2744,11 +2748,11 @@ li {
 }
 
 .help-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: 
     inset 0 1px 2px #FFFFFF,
-    0 22px 42px -8px rgba(3, 70, 135, 0.14),
-    0 8px 24px rgba(16, 185, 129, 0.14);
+    0 18px 36px -6px rgba(3, 70, 135, 0.12),
+    0 8px 20px rgba(16, 185, 129, 0.12);
   border-color: rgba(16, 185, 129, 0.45);
 }
 
@@ -2758,8 +2762,9 @@ li {
 }
 
 .help-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-md);
+  font-size: 1.85rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
 }
 
 .donation-advisory {
@@ -2767,8 +2772,9 @@ li {
   border: 1px solid rgba(217, 119, 6, 0.35);
   color: #78350F;
   border-radius: var(--radius-md);
-  padding: 0.9rem;
-  font-size: 0.85rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
   margin-top: auto;
 }
 

@@ -96,11 +96,11 @@ export default function ContactPage() {
             {/* Option 1: Volunteer */}
             <article className="help-card fade-in-up">
               <div className="help-icon" aria-hidden="true">🤝</div>
-              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>Volunteer With Us</h3>
-              <p style={{ fontSize: '0.92rem', color: 'var(--color-text-muted)', flexGrow: 1 }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.45rem' }}>Volunteer With Us</h3>
+              <p style={{ fontSize: '0.88rem', lineHeight: 1.55, color: 'var(--color-text-muted)', flexGrow: 1 }}>
                 Join our hands-on coastal shoreline clean-ups, mangrove protection activities, youth drug abuse resistance forums, or community livelihood workshops. We welcome volunteers of all backgrounds.
               </p>
-              <div className="mt-md">
+              <div style={{ marginTop: '0.85rem' }}>
                 <button
                   type="button"
                   className="btn btn-primary btn-sm"
@@ -114,11 +114,11 @@ export default function ContactPage() {
             {/* Option 2: Partner */}
             <article className="help-card featured fade-in-up">
               <div className="help-icon" aria-hidden="true">🏛️</div>
-              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>Institutional Partnership</h3>
-              <p style={{ fontSize: '0.92rem', color: 'var(--color-text-muted)', flexGrow: 1 }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.45rem' }}>Institutional Partnership</h3>
+              <p style={{ fontSize: '0.88rem', lineHeight: 1.55, color: 'var(--color-text-muted)', flexGrow: 1 }}>
                 We partner with local government units (LGUs), regional agencies (DOLE, DSWD, CHR, NYC), academic institutions, and international foundations to design, implement, and monitor community welfare initiatives.
               </p>
-              <div className="mt-md">
+              <div style={{ marginTop: '0.85rem' }}>
                 <button
                   type="button"
                   className="btn btn-accent btn-sm"
@@ -132,17 +132,17 @@ export default function ContactPage() {
             {/* Option 3: Donate */}
             <article className="help-card fade-in-up">
               <div className="help-icon" aria-hidden="true">💚</div>
-              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>Community Support &amp; Donations</h3>
-              <p style={{ fontSize: '0.92rem', color: 'var(--color-text-muted)' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.45rem' }}>Community Support &amp; Donations</h3>
+              <p style={{ fontSize: '0.88rem', lineHeight: 1.55, color: 'var(--color-text-muted)', marginBottom: '0.45rem' }}>
                 Support supplies for community soap-making livelihood trainings, coastal clean-up materials (trash bags, gloves, rakes), or youth development activities.
               </p>
 
-              <div style={{ backgroundColor: 'var(--color-bg-alt)', padding: '0.85rem', borderRadius: 'var(--radius-md)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-                <p style={{ marginBottom: '0.35rem' }}><strong>GCash Account:</strong> 0909 987 3083 (Friendship Goals Society Caraga-Butuan Inc.)</p>
-                <p style={{ marginBottom: 0 }}><strong>Bank Transfer:</strong> Land Bank of the Philippines - Butuan Branch | Acct: 0451-2839-44</p>
+              <div style={{ backgroundColor: 'var(--color-bg-alt)', padding: '0.6rem 0.8rem', borderRadius: 'var(--radius-md)', fontSize: '0.82rem', marginTop: '0.35rem', border: '1px solid var(--color-surface-border)' }}>
+                <p style={{ marginBottom: '0.2rem' }}><strong>GCash Account:</strong> 0909 987 3083 (FGSCBI)</p>
+                <p style={{ marginBottom: 0 }}><strong>Bank Transfer:</strong> Land Bank - Butuan | Acct: 0451-2839-44</p>
               </div>
 
-              <div className="donation-advisory" role="note" style={{ marginTop: '0.75rem' }}>
+              <div className="donation-advisory" role="note" style={{ marginTop: '0.5rem' }}>
                 <strong>⚠️ Verification Advisory:</strong> Please verify all donation and financial account details exclusively through our official hotline (<a href="tel:+639099873083" style={{ fontWeight: 700 }}>+63 909 987 3083</a>) or official channels before transferring any funds.
               </div>
             </article>
