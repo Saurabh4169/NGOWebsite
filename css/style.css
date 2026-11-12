@@ -7242,3 +7242,1340 @@ li {
 
 
 
+
+
+/* ======================================================================
+   Modern Luxury Layout (Inspired by Modern Ambience Reference)
+   - Dual Overlapping Photo Layout
+   - Value Cards with Dark Accent
+   - Institutional Alliance Quote Box
+   - Dark Luxury Bento Grid for Focus Areas
+   - Split Consultation / Partnership Desk
+   ====================================================================== */
+
+.modern-section {
+  padding: 5.5rem 0;
+  position: relative;
+}
+
+.modern-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0EA5E9;
+  margin-bottom: 0.85rem;
+}
+
+.modern-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 2.5px;
+  background: linear-gradient(90deg, #10B981, #0EA5E9);
+  border-radius: 2px;
+}
+
+.modern-grad-text {
+  background: linear-gradient(135deg, #10B981 0%, #0EA5E9 55%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* 1. About Our Society: Dual Overlapping Photo Layout */
+.modern-about-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 1.18fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.modern-dual-frame {
+  position: relative;
+  width: 100%;
+}
+
+.modern-main-photo {
+  width: 88%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 20px 48px rgba(11, 27, 43, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: block;
+}
+
+[data-theme="dark"] .modern-main-photo {
+  border-color: rgba(56, 189, 248, 0.2);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+}
+
+.modern-floating-photo-card {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  width: 48%;
+  height: 220px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 24px 44px rgba(11, 27, 43, 0.2);
+  border: 4px solid #FFFFFF;
+  background: #FFFFFF;
+}
+
+[data-theme="dark"] .modern-floating-photo-card {
+  border-color: #0B1B2B;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.6);
+}
+
+.modern-floating-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modern-heading {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: clamp(2rem, 3.2vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-heading);
+  margin-bottom: 1.15rem;
+}
+
+.modern-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  margin-bottom: 1.35rem;
+}
+
+.modern-split-paras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 1.75rem;
+}
+
+/* Row of 3 Value Cards (Reference-styled) */
+.modern-value-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.modern-value-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  border-radius: 16px;
+  padding: 1.15rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 14px rgba(11, 27, 43, 0.04);
+}
+
+[data-theme="dark"] .modern-value-card {
+  background: rgba(14, 28, 44, 0.85);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+.modern-value-card:hover {
+  transform: translateY(-2px);
+  border-color: #10B981;
+}
+
+.modern-value-card.is-dark {
+  background: #0B1B2B;
+  color: #FFFFFF;
+  border-color: #0B1B2B;
+  box-shadow: 0 8px 24px rgba(11, 27, 43, 0.25);
+}
+
+[data-theme="dark"] .modern-value-card.is-dark {
+  background: #081522;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.modern-value-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 165, 233, 0.12);
+  color: #0EA5E9;
+}
+
+.modern-value-card.is-dark .modern-value-icon {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(14, 165, 233, 0.3));
+  color: #34D399;
+}
+
+.modern-value-title {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.modern-value-card.is-dark .modern-value-title {
+  color: #FFFFFF;
+}
+
+/* Institutional Alliance Box */
+.modern-alliance-box {
+  background: rgba(11, 27, 43, 0.03);
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  border-radius: 16px;
+  padding: 1.15rem 1.4rem;
+  margin-bottom: 2rem;
+}
+
+[data-theme="dark"] .modern-alliance-box {
+  background: rgba(14, 28, 44, 0.6);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+.modern-alliance-tag {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0EA5E9;
+  margin-bottom: 0.45rem;
+}
+
+.modern-alliance-quote {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Modern Action Buttons */
+.modern-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-modern-dark-pill {
+  background: #0B1B2B;
+  color: #FFFFFF;
+  border-radius: 9999px;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 18px rgba(11, 27, 43, 0.2);
+  transition: all var(--transition-fast);
+  border: none;
+}
+
+.btn-modern-dark-pill:hover {
+  background: #059669;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+}
+
+[data-theme="dark"] .btn-modern-dark-pill {
+  background: linear-gradient(135deg, #10B981 0%, #0EA5E9 100%);
+  color: #FFFFFF;
+}
+
+.btn-modern-outline-pill {
+  background: transparent;
+  color: var(--color-heading);
+  border: 1.5px solid rgba(100, 116, 139, 0.3);
+  border-radius: 9999px;
+  padding: 0.85rem 1.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-modern-outline-pill:hover {
+  border-color: #0EA5E9;
+  color: #0EA5E9;
+  transform: translateY(-2px);
+}
+
+/* 2. Modern Dark Bento Section (Our Focus Areas) */
+.modern-bento-section {
+  background: #071320;
+  color: #FFFFFF;
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-bento-section::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.modern-bento-section::after {
+  content: "";
+  position: absolute;
+  bottom: -150px;
+  right: 10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.modern-bento-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.75rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-modern-glass-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  padding: 0.75rem 1.65rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all var(--transition-fast);
+}
+
+.btn-modern-glass-pill:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.modern-bento-top-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Left Hero Feature Card */
+.bento-hero-card {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all var(--transition-fast);
+}
+
+.bento-hero-card:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-3px);
+}
+
+.bento-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.bento-hero-card:hover .bento-hero-img {
+  transform: scale(1.04);
+}
+
+.bento-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 19, 32, 0.2) 0%, rgba(7, 19, 32, 0.88) 70%, rgba(7, 19, 32, 0.98) 100%);
+  z-index: 2;
+}
+
+.bento-hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.bento-badge-pill {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34D399;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  margin-bottom: 0.85rem;
+}
+
+.bento-hero-title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #FFFFFF;
+  margin-bottom: 0.65rem;
+}
+
+.bento-hero-desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 1.15rem;
+  max-width: 520px;
+}
+
+.bento-hero-link {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #38BDF8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap 0.2s ease;
+}
+
+.bento-hero-card:hover .bento-hero-link {
+  gap: 0.6rem;
+  color: #34D399;
+}
+
+/* Right Stacked Horizontal Cards */
+.bento-side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bento-side-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all var(--transition-fast);
+  flex: 1;
+}
+
+.bento-side-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(14, 165, 233, 0.4);
+  transform: translateY(-2px);
+}
+
+.bento-side-thumb {
+  width: 120px;
+  height: 140px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bento-side-content {
+  flex: 1;
+}
+
+.bento-side-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0EA5E9;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.bento-side-title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.bento-side-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+/* Bottom Grid of 4 Numbered Cards */
+.modern-bento-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.bento-mini-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+}
+
+.bento-mini-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(16, 185, 129, 0.4);
+  transform: translateY(-3px);
+}
+
+.bento-mini-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+
+.bento-mini-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(14, 165, 233, 0.12);
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bento-mini-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.bento-mini-title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.45rem;
+  line-height: 1.3;
+}
+
+.bento-mini-desc {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+}
+
+/* 3. Modern Consultation & Partnership Section */
+.modern-inquiry-section {
+  background-color: #F4F8FA;
+  padding: 6rem 0;
+  position: relative;
+}
+
+[data-theme="dark"] .modern-inquiry-section {
+  background-color: #06111B;
+}
+
+.modern-inquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.modern-inquiry-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+
+.modern-inquiry-stat-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modern-stat-box {
+  background: #FFFFFF;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  border-radius: 16px;
+  padding: 1.15rem 1.4rem;
+  flex: 1;
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(11, 27, 43, 0.05);
+}
+
+[data-theme="dark"] .modern-stat-box {
+  background: rgba(14, 28, 44, 0.9);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+.modern-stat-box-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.modern-stat-box-val {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.modern-stat-bar-track {
+  width: 100%;
+  height: 5px;
+  background: rgba(100, 116, 139, 0.15);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.modern-stat-bar-fill {
+  width: 92%;
+  height: 100%;
+  background: linear-gradient(90deg, #10B981, #0EA5E9);
+  border-radius: 9999px;
+}
+
+.modern-hotline-box {
+  background: #0B1B2B;
+  color: #FFFFFF;
+  border-radius: 16px;
+  padding: 1.15rem 1.4rem;
+  flex: 1.2;
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(11, 27, 43, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.modern-hotline-box:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+.modern-hotline-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.modern-hotline-num {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  display: block;
+}
+
+/* Modern Consultation Form Card */
+.modern-inquiry-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 48px rgba(11, 27, 43, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+[data-theme="dark"] .modern-inquiry-card {
+  background: rgba(14, 28, 44, 0.95);
+  border-color: rgba(56, 189, 248, 0.2);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+}
+
+.modern-inquiry-card-title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 0.35rem;
+}
+
+.modern-inquiry-card-sub {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.modern-card-notice-pill {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.82rem;
+  color: #065F46;
+  margin-bottom: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+[data-theme="dark"] .modern-card-notice-pill {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(52, 211, 153, 0.25);
+  color: #A7F3D0;
+}
+
+.modern-form-group {
+  margin-bottom: 1.15rem;
+}
+
+.modern-form-input,
+.modern-form-select,
+.modern-form-textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid rgba(100, 116, 139, 0.25);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-heading);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .modern-form-input,
+[data-theme="dark"] .modern-form-select,
+[data-theme="dark"] .modern-form-textarea {
+  background: rgba(19, 39, 61, 0.8);
+  border-color: rgba(100, 116, 139, 0.35);
+  color: #F1F5F9;
+}
+
+.modern-form-input:focus,
+.modern-form-select:focus,
+.modern-form-textarea:focus {
+  border-color: #0EA5E9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.modern-form-textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.btn-modern-submit {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, #10B981 0%, #0EA5E9 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.25);
+  transition: all var(--transition-fast);
+}
+
+.btn-modern-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+}
+
+/* Responsive Rules for Modern Sections */
+@media (max-width: 1024px) {
+  .modern-about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .modern-main-photo {
+    width: 100%;
+    height: 420px;
+  }
+  .modern-floating-photo-card {
+    width: 44%;
+    height: 180px;
+  }
+  .modern-bento-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .modern-bento-bottom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .modern-inquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .modern-section,
+  .modern-bento-section,
+  .modern-inquiry-section {
+    padding: 3.5rem 0;
+  }
+  .modern-split-paras {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .modern-value-cards-row {
+    grid-template-columns: 1fr;
+  }
+  .bento-hero-card {
+    min-height: 360px;
+    padding: 1.5rem;
+  }
+  .bento-side-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bento-side-thumb {
+    width: 100%;
+    height: 160px;
+  }
+  .modern-bento-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .modern-inquiry-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .modern-inquiry-stat-row {
+    flex-direction: column;
+  }
+}
+
+
+/* ======================================================================
+   Modernized About Us Page Styles
+   - Foundation MVV Cards (Mission, Vision, Values) with Top Gradient Accents
+   - High-Impact RDC Governance Showcase Card
+   - Modern Institutional Facts Bento Grid
+   - Modernized Leadership Cards with Gradient Rings & Executive Badges
+   ====================================================================== */
+
+/* Foundation MVV Cards */
+.about-mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about-mvv-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(100, 116, 139, 0.18);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 16px 38px -8px rgba(11, 27, 43, 0.06);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.about-mvv-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #10B981, #0EA5E9);
+}
+
+[data-theme="dark"] .about-mvv-card {
+  background: rgba(14, 28, 44, 0.9);
+  border-color: rgba(56, 189, 248, 0.2);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.45);
+}
+
+.about-mvv-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 48px -6px rgba(11, 27, 43, 0.12), 0 8px 24px rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.about-mvv-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(14, 165, 233, 0.12) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10B981;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .about-mvv-icon-wrap {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34D399;
+}
+
+.about-mvv-title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 0.85rem;
+}
+
+.about-mvv-text {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin: 0;
+  flex: 1;
+}
+
+.about-values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.about-value-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Modern RDC Civic Governance Showcase Box */
+.about-governance-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 28px;
+  padding: 3.5rem;
+  box-shadow: 0 20px 48px rgba(11, 27, 43, 0.08);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+[data-theme="dark"] .about-governance-card {
+  background: rgba(14, 28, 44, 0.92);
+  border-color: rgba(56, 189, 248, 0.25);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.5);
+}
+
+.about-governance-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about-governance-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  color: #0284C7;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .about-governance-tag {
+  color: #38BDF8;
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+.about-governance-title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+.about-governance-desc {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.about-governance-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.about-gov-chip {
+  background: rgba(11, 27, 43, 0.04);
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  border-radius: 12px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+[data-theme="dark"] .about-gov-chip {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+}
+
+.about-governance-photo-frame {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(11, 27, 43, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+[data-theme="dark"] .about-governance-photo-frame {
+  border-color: rgba(56, 189, 248, 0.25);
+}
+
+.about-governance-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-governance-caption {
+  padding: 0.85rem 1rem;
+  background: rgba(11, 27, 43, 0.85);
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+/* Modern Institutional Facts Bento Grid */
+.about-facts-bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.about-fact-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  border-radius: 20px;
+  padding: 1.85rem;
+  box-shadow: 0 8px 24px rgba(11, 27, 43, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .about-fact-card {
+  background: rgba(14, 28, 44, 0.88);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+.about-fact-card:hover {
+  transform: translateY(-2px);
+  border-color: #10B981;
+}
+
+.about-fact-card.is-featured {
+  grid-column: span 2;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(14, 165, 233, 0.06) 100%), #FFFFFF;
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+[data-theme="dark"] .about-fact-card.is-featured {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(14, 165, 233, 0.12) 100%), rgba(14, 28, 44, 0.95);
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+.about-fact-label {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.65rem;
+  display: block;
+}
+
+.about-fact-value {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.about-fact-sub {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Modern Leadership & Governance Grid */
+.about-team-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.about-team-modern-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(100, 116, 139, 0.18);
+  border-radius: 24px;
+  padding: 2.25rem 1.75rem;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(11, 27, 43, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .about-team-modern-card {
+  background: rgba(14, 28, 44, 0.9);
+  border-color: rgba(56, 189, 248, 0.18);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.about-team-modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 44px -8px rgba(11, 27, 43, 0.12), 0 8px 24px rgba(16, 185, 129, 0.1);
+  border-color: #10B981;
+}
+
+.about-avatar-ring {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, #10B981 0%, #0EA5E9 100%);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.about-team-modern-card:hover .about-avatar-ring {
+  transform: scale(1.05);
+}
+
+.about-avatar-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background: #FFFFFF;
+}
+
+.about-leader-name {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 0.35rem;
+}
+
+.about-leader-role-pill {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #059669;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.45rem;
+}
+
+[data-theme="dark"] .about-leader-role-pill {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34D399;
+}
+
+.about-leader-sub-role {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0EA5E9;
+  margin-bottom: 0.85rem;
+}
+
+.about-leader-bio {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* About Collaborate Banner */
+.about-collaborate-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(14, 165, 233, 0.08) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  border-radius: 20px;
+  padding: 2.25rem;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+[data-theme="dark"] .about-collaborate-banner {
+  background: rgba(14, 28, 44, 0.7);
+  border-color: rgba(56, 189, 248, 0.2);
+}
+
+/* Responsive Rules for About Page */
+@media (max-width: 1024px) {
+  .about-mvv-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-governance-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .about-facts-bento {
+    grid-template-columns: 1fr;
+  }
+  .about-fact-card.is-featured {
+    grid-column: span 1;
+  }
+  .about-team-modern-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-governance-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 20px;
+  }
+  .about-governance-img {
+    height: 260px;
+  }
+  .about-team-modern-grid {
+    grid-template-columns: 1fr;
+  }
+}
